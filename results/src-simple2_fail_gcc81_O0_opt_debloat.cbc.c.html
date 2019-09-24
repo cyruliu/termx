@@ -692,10 +692,12 @@ static __forceinline uint32_t llvm_OC_ctpop_OC_i32(uint32_t a) {
 // binpang, add stack prototype
 #define kStackSize (1UL&lt;&lt;20UL)
 char dummyStack[kStackSize];
+struct l_struct_struct_OC_State global_state;
 
 int main(){
-	struct l_struct_struct_OC_State *tmp = malloc(sizeof(struct l_struct_struct_OC_State));
-	memset(tmp, 0, sizeof(struct l_struct_struct_OC_State));
+	//struct l_struct_struct_OC_State *tmp = malloc(sizeof(struct l_struct_struct_OC_State));
+	//memset(tmp, 0, sizeof(struct l_struct_struct_OC_State));
+	struct l_struct_struct_OC_State *tmp = &amp;global_state;
 	// initialize the dummy stack
 	tmp-&gt;field6.field13.field0.field0 = &amp;dummyStack[kStackSize - 0x10];
 	tmp-&gt;field6.field15.field0.field0 = &amp;dummyStack[kStackSize - 0x8];
