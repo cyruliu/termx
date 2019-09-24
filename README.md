@@ -1,4 +1,6 @@
 ## TermX86 Project Guide
+The temporary running result is summarized here, [termx_summary.html](results/termx_summary.html) 
+
 Ubuntu:
 ## Install llvm-4.0 & ocaml llvm-4.0 binding
 ```
