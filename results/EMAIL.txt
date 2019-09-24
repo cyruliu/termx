@@ -1,5 +1,5 @@
 *** RESULTS OF RUNNING ALL BENCHMARKS ***
-  Source Code  |Expecting Result   |Temper Result  |GCC -O0  |GCC -O2
+              Source Code  |Expecting Result   |Temper Result  |GCC -O0  |GCC -O2
   -                                         simple2.c| UnKown   |     TRUE| FALSE(cex)|     TURE| (result here)
 simple2.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2.c.html
   -                               simple2_1_succeed.c| TRUE     |     TRUE| FALSE(cex)|     TURE| (result here)

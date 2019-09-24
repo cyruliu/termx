@@ -4,15 +4,15 @@ Analyzing source code directly ...
 Result: TRUE
 Parsing ...
 Parsing successes:
-E18206 BlankEdge: (FunctionEntryNode N61736 ) -> (GeneralNode N61744 )
-E18207 DeclarationEdge: (GeneralNode N61744 ) - (main()) -> (GeneralNode N61745 )
-E18208 BlankEdge: (GeneralNode N61745 ) -> (GeneralNode N61737 )
-E18209 DeclarationEdge: (GeneralNode N61737 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N61738 )
-E18210 BlankEdge: (GeneralNode N61738 ) -> (GeneralNode N61739 )
-E18211 DeclarationEdge: (GeneralNode N61739 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N61740 )
-E18212 StatementEdge: (GeneralNode N61740 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N61741 )
-E18213 StatementEdge: (GeneralNode N61741 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N61742 )
-E18214 ReturnStatementEdge: (GeneralNode N61742 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N61735 )
+E18482 BlankEdge: (FunctionEntryNode N62433 ) -> (GeneralNode N62441 )
+E18483 DeclarationEdge: (GeneralNode N62441 ) - (main()) -> (GeneralNode N62442 )
+E18484 BlankEdge: (GeneralNode N62442 ) -> (GeneralNode N62434 )
+E18485 DeclarationEdge: (GeneralNode N62434 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N62435 )
+E18486 BlankEdge: (GeneralNode N62435 ) -> (GeneralNode N62436 )
+E18487 DeclarationEdge: (GeneralNode N62436 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N62437 )
+E18488 StatementEdge: (GeneralNode N62437 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N62438 )
+E18489 StatementEdge: (GeneralNode N62438 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N62439 )
+E18490 ReturnStatementEdge: (GeneralNode N62439 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N62432 )
 
 Now attempting to run reachability ... 
 Result: TRUE
