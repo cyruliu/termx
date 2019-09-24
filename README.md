@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+## TermX86 Project Guide
+Ubuntu:
+## Install llvm-4.0 & ocaml llvm-4.0 binding
+```
+sudo apt install llvm-4.0
+opam init
+opam switch 4.05.0
+opam install llvm.4.0.0
+opam install thrift oasis
 
-You can use the [editor on GitHub](https://github.com/cyruliu/termx/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Fetch termx86 repo & pull git submodules
+```
+git clone git@bitbucket.org:avta/termx86.git
+cd termx86/llvm-tcfa
+git submodule update --init --recursive
 
-### Jekyll Themes
+```
+## Fetch cpathriftserver (run it before compiling llvm-tcfa) :
+```
+git clone git@github.com:erickoskinen/cpathriftserver.git
+to compile and run cpathriftserver locally, please refer to its README.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cyruliu/termx/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
 
-### Support or Contact
+## Compile and run llvm-tcfa
+```
+cd termx86/llvm-tcfa
+oasis setup
+make clean
+make
+./run.sh (you can edit this script to change the example you want to test)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```
+## CPAChecker & Temper Running Commands
+```
+scripts/cpa.sh -preprocess -spec ~/path/to/repo/temper/deps/cpathriftserver/src/main/resource/error_reach.prp -config config/predicateAnalysis.properties ~/path/to/source/simple1_fail.c
+
+./temper.native -cpa ~/path/to/source/simple1_fail.c
+
+```
+
