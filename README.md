@@ -30,7 +30,8 @@ cd termx86/llvm-tcfa
 oasis setup
 make clean
 make
-./run.sh (you can edit this script to change the example you want to test)
+./run.sh 
+(you can edit this script to change the example you want to test)
 
 ```
 ## CPAChecker & Temper Running Commands
