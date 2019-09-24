@@ -19,4 +19,4 @@ simple2_succeed.c : RESULT : https://cyruliu.github.io/termx/results//temper-sim
   -                                 simple2_succeed.c : TRUE     : FALSE(cex) :     TURE : (result here)
 simple2_succeed_gcc81_O0_opt_debloat.cbe.c : RESULT : https://cyruliu.github.io/termx/results//temper-simple2_succeed_gcc81_O0_opt_debloat.cbe.c.html
   -        simple2_succeed_gcc81_O0_opt_debloat.cbe.c : TRUE     : FALSE(cex) :     TURE : (result here)
- RESULTS SUMMARY : https://cyruliu.github.io/termx/results//results-20190924-134451/termx_summary.html
+ RESULTS SUMMARY : https://cyruliu.github.io/termx/results//termx_summary.html
