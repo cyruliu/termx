@@ -3,23 +3,23 @@ Connecting to Cpachecker Thrift Server ...
 Analyzing source code directly ...
 Result: FALSE
 Parsing ...
-summaryEdgeId: 17689
+summaryEdgeId: 17965
 Parsing successes:
-E17679 BlankEdge: (FunctionEntryNode N60406 ) -> (GeneralNode N60414 )
-E17680 DeclarationEdge: (GeneralNode N60414 ) - (__VERIFIER_error()) -> (GeneralNode N60415 )
-E17681 DeclarationEdge: (GeneralNode N60415 ) - (main()) -> (GeneralNode N60416 )
-E17682 BlankEdge: (GeneralNode N60416 ) -> (GeneralNode N60407 )
-E17683 DeclarationEdge: (GeneralNode N60407 ) - (PointerType[NumericType[int]*, is_const:false, is_volatile:false] a) -> (GeneralNode N60408 )
-E17684 StatementEdge: (GeneralNode N60408 ) - (PointerExpr(LHSExpr(IdExpr(a:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]) = Expr(LiteralExpr(-1))) -> (GeneralNode N60409 )
-E17685 DeclarationEdge: (GeneralNode N60409 ) - (NumericType[int] b = LHSExpr(PointerExpr(LHSExpr(IdExpr(a:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]))) -> (GeneralNode N60410 )
-E17686 AssumeEdge: (GeneralNode N60410 ) - (BinExpr(LHSExpr(IdExpr(b:NumericType[int]))=LiteralExpr(-1))) -> (GeneralNode N60412 )
-E17687 AssumeEdge: (GeneralNode N60410 ) - (not BinExpr(LHSExpr(IdExpr(b:NumericType[int]))=LiteralExpr(-1))) -> (GeneralNode N60411 )
-E17690 FunctionCallEdge: (GeneralNode N60412 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> VoidType]))(): E17689 FunctionSummaryEdge: (GeneralNode N60412 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> VoidType]))(): ) -> (GeneralNode N60413 )) -> (FunctionEntryNode N60403 )
-E17691 BlankEdge: (FunctionEntryNode N60403 ) -> (GeneralNode N60404 )
-E17692 BlankEdge: (GeneralNode N60404 ) -> (FunctionExitNode N60402 )
-E17693 FunctionReturnEdge: (FunctionExitNode N60402 ) - (E17689 FunctionSummaryEdge: (GeneralNode N60412 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> VoidType]))(): ) -> (GeneralNode N60413 )) -> (GeneralNode N60413 )
-E17694 BlankEdge: (GeneralNode N60413 ) -> (GeneralNode N60411 )
-E17688 BlankEdge: (GeneralNode N60411 ) -> (FunctionExitNode N60405 )
+E17955 BlankEdge: (FunctionEntryNode N61103 ) -> (GeneralNode N61111 )
+E17956 DeclarationEdge: (GeneralNode N61111 ) - (__VERIFIER_error()) -> (GeneralNode N61112 )
+E17957 DeclarationEdge: (GeneralNode N61112 ) - (main()) -> (GeneralNode N61113 )
+E17958 BlankEdge: (GeneralNode N61113 ) -> (GeneralNode N61104 )
+E17959 DeclarationEdge: (GeneralNode N61104 ) - (PointerType[NumericType[int]*, is_const:false, is_volatile:false] a) -> (GeneralNode N61105 )
+E17960 StatementEdge: (GeneralNode N61105 ) - (PointerExpr(LHSExpr(IdExpr(a:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]) = Expr(LiteralExpr(-1))) -> (GeneralNode N61106 )
+E17961 DeclarationEdge: (GeneralNode N61106 ) - (NumericType[int] b = LHSExpr(PointerExpr(LHSExpr(IdExpr(a:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]))) -> (GeneralNode N61107 )
+E17962 AssumeEdge: (GeneralNode N61107 ) - (BinExpr(LHSExpr(IdExpr(b:NumericType[int]))=LiteralExpr(-1))) -> (GeneralNode N61109 )
+E17963 AssumeEdge: (GeneralNode N61107 ) - (not BinExpr(LHSExpr(IdExpr(b:NumericType[int]))=LiteralExpr(-1))) -> (GeneralNode N61108 )
+E17966 FunctionCallEdge: (GeneralNode N61109 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> VoidType]))(): E17965 FunctionSummaryEdge: (GeneralNode N61109 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> VoidType]))(): ) -> (GeneralNode N61110 )) -> (FunctionEntryNode N61100 )
+E17967 BlankEdge: (FunctionEntryNode N61100 ) -> (GeneralNode N61101 )
+E17968 BlankEdge: (GeneralNode N61101 ) -> (FunctionExitNode N61099 )
+E17969 FunctionReturnEdge: (FunctionExitNode N61099 ) - (E17965 FunctionSummaryEdge: (GeneralNode N61109 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> VoidType]))(): ) -> (GeneralNode N61110 )) -> (GeneralNode N61110 )
+E17970 BlankEdge: (GeneralNode N61110 ) -> (GeneralNode N61108 )
+E17964 BlankEdge: (GeneralNode N61108 ) -> (FunctionExitNode N61102 )
 
 Now attempting to run reachability ... 
 Result: FALSE
