@@ -1,0 +1,22 @@
+*** RESULTS OF RUNNING ALL BENCHMARKS ***
+simple2.c : RESULT : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/temper-simple2.c.html
+  -                                         simple2.c : TRUE     : FALSE(cex) :     TURE : (result here)
+simple2_1_succeed.c : RESULT : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/temper-simple2_1_succeed.c.html
+  -                               simple2_1_succeed.c : TRUE     : FALSE(cex) :     TURE : (result here)
+simple2_bit.c : RESULT : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/temper-simple2_bit.c.html
+  -                                     simple2_bit.c : FALSE(cex) : FALSE(cex) :     TURE : (result here)
+simple2_deref.c : RESULT : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/temper-simple2_deref.c.html
+  -                                   simple2_deref.c : FALSE(cex) : FALSE(cex) :     TURE : (result here)
+simple2_fail.c : RESULT : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/temper-simple2_fail.c.html
+  -                                    simple2_fail.c : FALSE(cex) : FALSE(cex) :     TURE : (result here)
+simple2_fail_2.c : RESULT : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/temper-simple2_fail_2.c.html
+  -                                  simple2_fail_2.c : FALSE(cex) : FALSE(cex) :     TURE : (result here)
+simple2_fail_gcc81_O0_opt_debloat.cbc.c : RESULT : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/temper-simple2_fail_gcc81_O0_opt_debloat.cbc.c.html
+  -           simple2_fail_gcc81_O0_opt_debloat.cbc.c : ERROR    : FALSE(cex) :     TURE : (result here)
+simple2_lshr.c : RESULT : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/temper-simple2_lshr.c.html
+  -                                    simple2_lshr.c : TRUE     : FALSE(cex) :     TURE : (result here)
+simple2_succeed.c : RESULT : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/temper-simple2_succeed.c.html
+  -                                 simple2_succeed.c : TRUE     : FALSE(cex) :     TURE : (result here)
+simple2_succeed_gcc81_O0_opt_debloat.cbe.c : RESULT : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/temper-simple2_succeed_gcc81_O0_opt_debloat.cbe.c.html
+  -        simple2_succeed_gcc81_O0_opt_debloat.cbe.c : ERROR    : FALSE(cex) :     TURE : (result here)
+ : SUMMARY : file:///home/cyrus/avta/termx86/llvm-tcfa/bin/../results-20190923-181400/termx_summary.html

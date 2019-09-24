@@ -1,0 +1,18 @@
+Connecting to localhost (127.0.0.1) ...
+Connecting to Cpachecker Thrift Server ...
+Analyzing source code directly ...
+Result: TRUE
+Parsing ...
+Parsing successes:
+E12962 BlankEdge: (FunctionEntryNode N48493 ) -> (GeneralNode N48501 )
+E12963 DeclarationEdge: (GeneralNode N48501 ) - (main()) -> (GeneralNode N48502 )
+E12964 BlankEdge: (GeneralNode N48502 ) -> (GeneralNode N48494 )
+E12965 DeclarationEdge: (GeneralNode N48494 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N48495 )
+E12966 BlankEdge: (GeneralNode N48495 ) -> (GeneralNode N48496 )
+E12967 DeclarationEdge: (GeneralNode N48496 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N48497 )
+E12968 StatementEdge: (GeneralNode N48497 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N48498 )
+E12969 StatementEdge: (GeneralNode N48498 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N48499 )
+E12970 ReturnStatementEdge: (GeneralNode N48499 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N48492 )
+
+Now attempting to run reachability ... 
+Result: TRUE
