@@ -299,23 +299,23 @@ Connecting to Cpachecker Thrift Server ...
 Analyzing source code directly ...
 Result: FALSE
 Parsing ...
-summaryEdgeId: 17965
+summaryEdgeId: 18241
 Parsing successes:
-E17955 BlankEdge: (FunctionEntryNode N61103 ) -&gt; (GeneralNode N61111 )
-E17956 DeclarationEdge: (GeneralNode N61111 ) - (__VERIFIER_error()) -&gt; (GeneralNode N61112 )
-E17957 DeclarationEdge: (GeneralNode N61112 ) - (main()) -&gt; (GeneralNode N61113 )
-E17958 BlankEdge: (GeneralNode N61113 ) -&gt; (GeneralNode N61104 )
-E17959 DeclarationEdge: (GeneralNode N61104 ) - (PointerType[NumericType[int]*, is_const:false, is_volatile:false] a) -&gt; (GeneralNode N61105 )
-E17960 StatementEdge: (GeneralNode N61105 ) - (PointerExpr(LHSExpr(IdExpr(a:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]) = Expr(LiteralExpr(-1))) -&gt; (GeneralNode N61106 )
-E17961 DeclarationEdge: (GeneralNode N61106 ) - (NumericType[int] b = LHSExpr(PointerExpr(LHSExpr(IdExpr(a:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]))) -&gt; (GeneralNode N61107 )
-E17962 AssumeEdge: (GeneralNode N61107 ) - (BinExpr(LHSExpr(IdExpr(b:NumericType[int]))=LiteralExpr(-1))) -&gt; (GeneralNode N61109 )
-E17963 AssumeEdge: (GeneralNode N61107 ) - (not BinExpr(LHSExpr(IdExpr(b:NumericType[int]))=LiteralExpr(-1))) -&gt; (GeneralNode N61108 )
-E17966 FunctionCallEdge: (GeneralNode N61109 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; VoidType]))(): E17965 FunctionSummaryEdge: (GeneralNode N61109 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; VoidType]))(): ) -&gt; (GeneralNode N61110 )) -&gt; (FunctionEntryNode N61100 )
-E17967 BlankEdge: (FunctionEntryNode N61100 ) -&gt; (GeneralNode N61101 )
-E17968 BlankEdge: (GeneralNode N61101 ) -&gt; (FunctionExitNode N61099 )
-E17969 FunctionReturnEdge: (FunctionExitNode N61099 ) - (E17965 FunctionSummaryEdge: (GeneralNode N61109 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; VoidType]))(): ) -&gt; (GeneralNode N61110 )) -&gt; (GeneralNode N61110 )
-E17970 BlankEdge: (GeneralNode N61110 ) -&gt; (GeneralNode N61108 )
-E17964 BlankEdge: (GeneralNode N61108 ) -&gt; (FunctionExitNode N61102 )
+E18231 BlankEdge: (FunctionEntryNode N61800 ) -&gt; (GeneralNode N61808 )
+E18232 DeclarationEdge: (GeneralNode N61808 ) - (__VERIFIER_error()) -&gt; (GeneralNode N61809 )
+E18233 DeclarationEdge: (GeneralNode N61809 ) - (main()) -&gt; (GeneralNode N61810 )
+E18234 BlankEdge: (GeneralNode N61810 ) -&gt; (GeneralNode N61801 )
+E18235 DeclarationEdge: (GeneralNode N61801 ) - (PointerType[NumericType[int]*, is_const:false, is_volatile:false] a) -&gt; (GeneralNode N61802 )
+E18236 StatementEdge: (GeneralNode N61802 ) - (PointerExpr(LHSExpr(IdExpr(a:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]) = Expr(LiteralExpr(-1))) -&gt; (GeneralNode N61803 )
+E18237 DeclarationEdge: (GeneralNode N61803 ) - (NumericType[int] b = LHSExpr(PointerExpr(LHSExpr(IdExpr(a:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]))) -&gt; (GeneralNode N61804 )
+E18238 AssumeEdge: (GeneralNode N61804 ) - (BinExpr(LHSExpr(IdExpr(b:NumericType[int]))=LiteralExpr(-1))) -&gt; (GeneralNode N61806 )
+E18239 AssumeEdge: (GeneralNode N61804 ) - (not BinExpr(LHSExpr(IdExpr(b:NumericType[int]))=LiteralExpr(-1))) -&gt; (GeneralNode N61805 )
+E18242 FunctionCallEdge: (GeneralNode N61806 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; VoidType]))(): E18241 FunctionSummaryEdge: (GeneralNode N61806 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; VoidType]))(): ) -&gt; (GeneralNode N61807 )) -&gt; (FunctionEntryNode N61797 )
+E18243 BlankEdge: (FunctionEntryNode N61797 ) -&gt; (GeneralNode N61798 )
+E18244 BlankEdge: (GeneralNode N61798 ) -&gt; (FunctionExitNode N61796 )
+E18245 FunctionReturnEdge: (FunctionExitNode N61796 ) - (E18241 FunctionSummaryEdge: (GeneralNode N61806 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; VoidType]))(): ) -&gt; (GeneralNode N61807 )) -&gt; (GeneralNode N61807 )
+E18246 BlankEdge: (GeneralNode N61807 ) -&gt; (GeneralNode N61805 )
+E18240 BlankEdge: (GeneralNode N61805 ) -&gt; (FunctionExitNode N61799 )
 
 Now attempting to run reachability ... 
 Result: FALSE
