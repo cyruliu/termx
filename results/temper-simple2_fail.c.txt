@@ -3,21 +3,21 @@ Connecting to Cpachecker Thrift Server ...
 Analyzing source code directly ...
 Result: FALSE
 Parsing ...
-summaryEdgeId: 20245
+summaryEdgeId: 20521
 Parsing successes:
-E20237 BlankEdge: (FunctionEntryNode N66862 ) -> (GeneralNode N66869 )
-E20238 DeclarationEdge: (GeneralNode N66869 ) - (__VERIFIER_error(NumericType[int] a)) -> (GeneralNode N66870 )
-E20239 DeclarationEdge: (GeneralNode N66870 ) - (main()) -> (GeneralNode N66871 )
-E20240 BlankEdge: (GeneralNode N66871 ) -> (GeneralNode N66863 )
-E20241 DeclarationEdge: (GeneralNode N66863 ) - (NumericType[int] x = LiteralExpr(1)) -> (GeneralNode N66864 )
-E20242 AssumeEdge: (GeneralNode N66864 ) - (BinExpr(LHSExpr(IdExpr(x:NumericType[int]))>LiteralExpr(0))) -> (GeneralNode N66866 )
-E20243 AssumeEdge: (GeneralNode N66864 ) - (not BinExpr(LHSExpr(IdExpr(x:NumericType[int]))>LiteralExpr(0))) -> (GeneralNode N66865 )
-E20246 FunctionCallEdge: (GeneralNode N66866 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): E20245 FunctionSummaryEdge: (GeneralNode N66866 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N66867 )) -> (FunctionEntryNode N66858 )
-E20247 BlankEdge: (FunctionEntryNode N66858 ) -> (GeneralNode N66859 )
-E20248 ReturnStatementEdge: (GeneralNode N66859 ) - (returnBinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(1))IdExpr(__retval__:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(1)))) -> (FunctionExitNode N66857 )
-E20249 FunctionReturnEdge: (FunctionExitNode N66857 ) - (E20245 FunctionSummaryEdge: (GeneralNode N66866 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N66867 )) -> (GeneralNode N66867 )
-E20250 BlankEdge: (GeneralNode N66867 ) -> (GeneralNode N66865 )
-E20244 ReturnStatementEdge: (GeneralNode N66865 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N66861 )
+E20513 BlankEdge: (FunctionEntryNode N67959 ) -> (GeneralNode N67966 )
+E20514 DeclarationEdge: (GeneralNode N67966 ) - (__VERIFIER_error(NumericType[int] a)) -> (GeneralNode N67967 )
+E20515 DeclarationEdge: (GeneralNode N67967 ) - (main()) -> (GeneralNode N67968 )
+E20516 BlankEdge: (GeneralNode N67968 ) -> (GeneralNode N67960 )
+E20517 DeclarationEdge: (GeneralNode N67960 ) - (NumericType[int] x = LiteralExpr(1)) -> (GeneralNode N67961 )
+E20518 AssumeEdge: (GeneralNode N67961 ) - (BinExpr(LHSExpr(IdExpr(x:NumericType[int]))>LiteralExpr(0))) -> (GeneralNode N67963 )
+E20519 AssumeEdge: (GeneralNode N67961 ) - (not BinExpr(LHSExpr(IdExpr(x:NumericType[int]))>LiteralExpr(0))) -> (GeneralNode N67962 )
+E20522 FunctionCallEdge: (GeneralNode N67963 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): E20521 FunctionSummaryEdge: (GeneralNode N67963 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N67964 )) -> (FunctionEntryNode N67955 )
+E20523 BlankEdge: (FunctionEntryNode N67955 ) -> (GeneralNode N67956 )
+E20524 ReturnStatementEdge: (GeneralNode N67956 ) - (returnBinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(1))IdExpr(__retval__:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(1)))) -> (FunctionExitNode N67954 )
+E20525 FunctionReturnEdge: (FunctionExitNode N67954 ) - (E20521 FunctionSummaryEdge: (GeneralNode N67963 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N67964 )) -> (GeneralNode N67964 )
+E20526 BlankEdge: (GeneralNode N67964 ) -> (GeneralNode N67962 )
+E20520 ReturnStatementEdge: (GeneralNode N67962 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N67958 )
 
 Now attempting to run reachability ... 
 Result: FALSE
