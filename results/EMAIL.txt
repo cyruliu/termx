@@ -14,10 +14,18 @@ simple2_fail.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_
 simple2_fail_2.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_fail_2.c.html
   -           simple2_fail_gcc81_O0_opt_debloat.cbc.c| FALSE    |    ERROR| FALSE(cex)|     TURE| (result here)
 simple2_fail_gcc81_O0_opt_debloat.cbc.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_fail_gcc81_O0_opt_debloat.cbc.c.html
+  -                   simple2_fail_gcc81_O0_snowman.c| FALSE    |    ERROR| FALSE(cex)|     TURE| (result here)
+simple2_fail_gcc81_O0_snowman.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_fail_gcc81_O0_snowman.c.html
+  -           simple2_fail_gcc81_O0_snowman_reinter.c| FALSE    | FALSE(cex)| FALSE(cex)|     TURE| (result here)
+simple2_fail_gcc81_O0_snowman_reinter.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_fail_gcc81_O0_snowman_reinter.c.html
   -                                    simple2_lshr.c| UnKown   |     TRUE| FALSE(cex)|     TURE| (result here)
 simple2_lshr.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_lshr.c.html
   -                                 simple2_succeed.c| TRUE     |     TRUE| FALSE(cex)|     TURE| (result here)
 simple2_succeed.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_succeed.c.html
   -        simple2_succeed_gcc81_O0_opt_debloat.cbe.c| TRUE     |    ERROR| FALSE(cex)|     TURE| (result here)
 simple2_succeed_gcc81_O0_opt_debloat.cbe.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_succeed_gcc81_O0_opt_debloat.cbe.c.html
+  -                simple2_succeed_gcc81_O0_snowman.c| TRUE     |    ERROR| FALSE(cex)|     TURE| (result here)
+simple2_succeed_gcc81_O0_snowman.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_succeed_gcc81_O0_snowman.c.html
+  -        simple2_succeed_gcc81_O0_snowman_reinter.c| TRUE     |     TRUE| FALSE(cex)|     TURE| (result here)
+simple2_succeed_gcc81_O0_snowman_reinter.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_succeed_gcc81_O0_snowman_reinter.c.html
  RESULTS SUMMARY : https://cyruliu.github.io/termx/results//termx_summary.html
