@@ -3,23 +3,23 @@ Connecting to Cpachecker Thrift Server ...
 Analyzing source code directly ...
 Result: FALSE
 Parsing ...
-summaryEdgeId: 284
+summaryEdgeId: 608
 Parsing successes:
-E277 BlankEdge: (FunctionEntryNode N775 ) -> (GeneralNode N781 )
-E278 DeclarationEdge: (GeneralNode N781 ) - (_Z16__VERIFIER_errori(NumericType[int] edi)) -> (GeneralNode N782 )
-E279 DeclarationEdge: (GeneralNode N782 ) - (fun_4004a1()) -> (GeneralNode N783 )
-E280 DeclarationEdge: (GeneralNode N783 ) - (NumericType[char] _edata = LiteralExpr(0)) -> (GeneralNode N784 )
-E281 DeclarationEdge: (GeneralNode N784 ) - (main()) -> (GeneralNode N785 )
-E282 BlankEdge: (GeneralNode N785 ) -> (GeneralNode N776 )
-E283 BlankEdge: (GeneralNode N776 ) -> (GeneralNode N778 )
-E285 FunctionCallEdge: (GeneralNode N778 ) - (LHSExpr(IdExpr(_Z16__VERIFIER_errori:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(1)): E284 FunctionSummaryEdge: (GeneralNode N778 ) - (LHSExpr(IdExpr(_Z16__VERIFIER_errori:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(1)): ) -> (GeneralNode N779 )) -> (FunctionEntryNode N761 )
-E286 BlankEdge: (FunctionEntryNode N761 ) -> (GeneralNode N762 )
-E287 DeclarationEdge: (GeneralNode N762 ) - (NumericType[int] rax2) -> (GeneralNode N763 )
-E288 StatementEdge: (GeneralNode N763 ) - (IdExpr(rax2:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(edi:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N764 )
-E289 ReturnStatementEdge: (GeneralNode N764 ) - (returnLHSExpr(IdExpr(rax2:NumericType[int]))IdExpr(__retval__:NumericType[int]) = Expr(LHSExpr(IdExpr(rax2:NumericType[int])))) -> (FunctionExitNode N760 )
-E290 FunctionReturnEdge: (FunctionExitNode N760 ) - (E284 FunctionSummaryEdge: (GeneralNode N778 ) - (LHSExpr(IdExpr(_Z16__VERIFIER_errori:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(1)): ) -> (GeneralNode N779 )) -> (GeneralNode N779 )
-E291 BlankEdge: (GeneralNode N779 ) -> (GeneralNode N777 )
-E292 ReturnStatementEdge: (GeneralNode N777 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N774 )
+E601 BlankEdge: (FunctionEntryNode N1651 ) -> (GeneralNode N1657 )
+E602 DeclarationEdge: (GeneralNode N1657 ) - (_Z16__VERIFIER_errori(NumericType[int] edi)) -> (GeneralNode N1658 )
+E603 DeclarationEdge: (GeneralNode N1658 ) - (fun_4004a1()) -> (GeneralNode N1659 )
+E604 DeclarationEdge: (GeneralNode N1659 ) - (NumericType[char] _edata = LiteralExpr(0)) -> (GeneralNode N1660 )
+E605 DeclarationEdge: (GeneralNode N1660 ) - (main()) -> (GeneralNode N1661 )
+E606 BlankEdge: (GeneralNode N1661 ) -> (GeneralNode N1652 )
+E607 BlankEdge: (GeneralNode N1652 ) -> (GeneralNode N1654 )
+E609 FunctionCallEdge: (GeneralNode N1654 ) - (LHSExpr(IdExpr(_Z16__VERIFIER_errori:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(1)): E608 FunctionSummaryEdge: (GeneralNode N1654 ) - (LHSExpr(IdExpr(_Z16__VERIFIER_errori:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(1)): ) -> (GeneralNode N1655 )) -> (FunctionEntryNode N1637 )
+E610 BlankEdge: (FunctionEntryNode N1637 ) -> (GeneralNode N1638 )
+E611 DeclarationEdge: (GeneralNode N1638 ) - (NumericType[int] rax2) -> (GeneralNode N1639 )
+E612 StatementEdge: (GeneralNode N1639 ) - (IdExpr(rax2:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(edi:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N1640 )
+E613 ReturnStatementEdge: (GeneralNode N1640 ) - (returnLHSExpr(IdExpr(rax2:NumericType[int]))IdExpr(__retval__:NumericType[int]) = Expr(LHSExpr(IdExpr(rax2:NumericType[int])))) -> (FunctionExitNode N1636 )
+E614 FunctionReturnEdge: (FunctionExitNode N1636 ) - (E608 FunctionSummaryEdge: (GeneralNode N1654 ) - (LHSExpr(IdExpr(_Z16__VERIFIER_errori:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(1)): ) -> (GeneralNode N1655 )) -> (GeneralNode N1655 )
+E615 BlankEdge: (GeneralNode N1655 ) -> (GeneralNode N1653 )
+E616 ReturnStatementEdge: (GeneralNode N1653 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N1650 )
 
 Now attempting to run reachability ... 
 Result: FALSE
