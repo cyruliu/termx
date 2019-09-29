@@ -4,15 +4,15 @@ Analyzing source code directly ...
 Result: TRUE
 Parsing ...
 Parsing successes:
-E472 BlankEdge: (FunctionEntryNode N1311 ) -> (GeneralNode N1319 )
-E473 DeclarationEdge: (GeneralNode N1319 ) - (main()) -> (GeneralNode N1320 )
-E474 BlankEdge: (GeneralNode N1320 ) -> (GeneralNode N1312 )
-E475 DeclarationEdge: (GeneralNode N1312 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N1313 )
-E476 BlankEdge: (GeneralNode N1313 ) -> (GeneralNode N1314 )
-E477 DeclarationEdge: (GeneralNode N1314 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N1315 )
-E478 StatementEdge: (GeneralNode N1315 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N1316 )
-E479 StatementEdge: (GeneralNode N1316 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N1317 )
-E480 ReturnStatementEdge: (GeneralNode N1317 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N1310 )
+E796 BlankEdge: (FunctionEntryNode N2187 ) -> (GeneralNode N2195 )
+E797 DeclarationEdge: (GeneralNode N2195 ) - (main()) -> (GeneralNode N2196 )
+E798 BlankEdge: (GeneralNode N2196 ) -> (GeneralNode N2188 )
+E799 DeclarationEdge: (GeneralNode N2188 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N2189 )
+E800 BlankEdge: (GeneralNode N2189 ) -> (GeneralNode N2190 )
+E801 DeclarationEdge: (GeneralNode N2190 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N2191 )
+E802 StatementEdge: (GeneralNode N2191 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N2192 )
+E803 StatementEdge: (GeneralNode N2192 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N2193 )
+E804 ReturnStatementEdge: (GeneralNode N2193 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N2186 )
 
 Now attempting to run reachability ... 
 Result: TRUE
