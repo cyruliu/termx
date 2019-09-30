@@ -297,43 +297,31 @@ span { display: inline-block; }
 Connecting to localhost (127.0.0.1) ...
 Connecting to Cpachecker Thrift Server ...
 Analyzing source code directly ...
-Result: FALSE
-Parsing ...
-summaryEdgeId: 1104
-Parsing successes:
-E1080 BlankEdge: (FunctionEntryNode N2952 ) -&gt; (GeneralNode N2975 )
-E1081 DeclarationEdge: (GeneralNode N2975 ) - (__VERIFIER_error()) -&gt; (GeneralNode N2976 )
-E1082 DeclarationEdge: (GeneralNode N2976 ) - (random()) -&gt; (GeneralNode N2977 )
-E1083 DeclarationEdge: (GeneralNode N2977 ) - (main()) -&gt; (GeneralNode N2978 )
-E1084 BlankEdge: (GeneralNode N2978 ) -&gt; (GeneralNode N2953 )
-E1085 DeclarationEdge: (GeneralNode N2953 ) - (PointerType[NumericType[int]*, is_const:false, is_volatile:false] V_10862) -&gt; (GeneralNode N2954 )
-E1086 DeclarationEdge: (GeneralNode N2954 ) - (PointerType[NumericType[int]*, is_const:false, is_volatile:false] V_8944) -&gt; (GeneralNode N2955 )
-E1087 DeclarationEdge: (GeneralNode N2955 ) - (PointerType[NumericType[int]*, is_const:false, is_volatile:false] V_13257) -&gt; (GeneralNode N2956 )
-E1088 DeclarationEdge: (GeneralNode N2956 ) - (PointerType[NumericType[int]*, is_const:false, is_volatile:false] V_13734) -&gt; (GeneralNode N2957 )
-E1089 StatementEdge: (GeneralNode N2957 ) - (PointerExpr(LHSExpr(IdExpr(V_10862:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]) = Expr(LiteralExpr(-1))) -&gt; (GeneralNode N2958 )
-E1090 DeclarationEdge: (GeneralNode N2958 ) - (NumericType[int] V_13736 = LHSExpr(PointerExpr(LHSExpr(IdExpr(V_10862:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]))) -&gt; (GeneralNode N2959 )
-E1091 StatementEdge: (GeneralNode N2959 ) - (PointerExpr(LHSExpr(IdExpr(V_8944:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]) = Expr(LHSExpr(IdExpr(V_13736:NumericType[int])))) -&gt; (GeneralNode N2960 )
-E1092 DeclarationEdge: (GeneralNode N2960 ) - (NumericType[int] V_13743 = LHSExpr(PointerExpr(LHSExpr(IdExpr(V_8944:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]))) -&gt; (GeneralNode N2961 )
-E1093 DeclarationEdge: (GeneralNode N2961 ) - (NumericType[int] V_13744 = BinExpr(LHSExpr(IdExpr(V_13743:NumericType[int]))=LiteralExpr(0))) -&gt; (GeneralNode N2962 )
-E1094 DeclarationEdge: (GeneralNode N2962 ) - (NumericType[int] V_13746 = LHSExpr(PointerExpr(LHSExpr(IdExpr(V_8944:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]))) -&gt; (GeneralNode N2963 )
-E1095 DeclarationEdge: (GeneralNode N2963 ) - (NumericType[int] V_13747 = BinExpr(LHSExpr(IdExpr(V_13746:NumericType[int]))&gt;&gt;LiteralExpr(31))) -&gt; (GeneralNode N2964 )
-E1096 DeclarationEdge: (GeneralNode N2964 ) - (NumericType[int] V_13748 = LHSExpr(IdExpr(V_13747:NumericType[int]))) -&gt; (GeneralNode N2965 )
-E1097 StatementEdge: (GeneralNode N2965 ) - (PointerExpr(LHSExpr(IdExpr(V_13257:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]) = Expr(LHSExpr(IdExpr(V_13748:NumericType[int])))) -&gt; (GeneralNode N2966 )
-E1098 StatementEdge: (GeneralNode N2966 ) - (PointerExpr(LHSExpr(IdExpr(V_13734:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]) = Expr(LiteralExpr(0))) -&gt; (GeneralNode N2967 )
-E1099 DeclarationEdge: (GeneralNode N2967 ) - (NumericType[int] V_13749 = BinExpr(LHSExpr(IdExpr(V_13748:NumericType[int]))!=LiteralExpr(0))) -&gt; (GeneralNode N2968 )
-E1100 DeclarationEdge: (GeneralNode N2968 ) - (NumericType[int] V_13750 = BinExpr(LHSExpr(IdExpr(V_13744:NumericType[int]))|LHSExpr(IdExpr(V_13749:NumericType[int])))) -&gt; (GeneralNode N2969 )
-E1101 StatementEdge: (GeneralNode N2969 ) - (IdExpr(V_13750:NumericType[int]) = Expr(LiteralExpr(1))) -&gt; (GeneralNode N2972 )
-E1102 AssumeEdge: (GeneralNode N2972 ) - (BinExpr(LHSExpr(IdExpr(V_13750:NumericType[int]))=LiteralExpr(0))) -&gt; (GeneralNode N2970 )
-E1103 AssumeEdge: (GeneralNode N2972 ) - (not BinExpr(LHSExpr(IdExpr(V_13750:NumericType[int]))=LiteralExpr(0))) -&gt; (GeneralNode N2971 )
-E1110 ReturnStatementEdge: (GeneralNode N2970 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -&gt; (FunctionExitNode N2951 )
-E1105 FunctionCallEdge: (GeneralNode N2971 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; NumericType[int]]))(): E1104 FunctionSummaryEdge: (GeneralNode N2971 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; NumericType[int]]))(): ) -&gt; (GeneralNode N2973 )) -&gt; (FunctionEntryNode N2944 )
-E1106 BlankEdge: (FunctionEntryNode N2944 ) -&gt; (GeneralNode N2945 )
-E1107 ReturnStatementEdge: (GeneralNode N2945 ) - (returnLiteralExpr(1)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(1))) -&gt; (FunctionExitNode N2943 )
-E1108 FunctionReturnEdge: (FunctionExitNode N2943 ) - (E1104 FunctionSummaryEdge: (GeneralNode N2971 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; NumericType[int]]))(): ) -&gt; (GeneralNode N2973 )) -&gt; (GeneralNode N2973 )
-E1109 BlankEdge: (GeneralNode N2973 ) -&gt; (GeneralNode N2970 )
+Exception on CpaThriftServer
+analyze: ERROR File includes system headers, either preprocess it manually or specify -preprocess.
+org.sosy_lab.cpachecker.exceptions.CParserException: File includes system headers, either preprocess it manually or specify -preprocess.
+	at org.sosy_lab.cpachecker.cfa.parser.eclipse.c.EclipseCParser.parse(EclipseCParser.java:335)
+	at org.sosy_lab.cpachecker.cfa.parser.eclipse.c.EclipseCParser.parseSomething(EclipseCParser.java:167)
+	at org.sosy_lab.cpachecker.cfa.parser.eclipse.c.EclipseCParser.parseString(EclipseCParser.java:215)
+	at org.sosy_lab.cpachecker.cfa.CParserWithLocationMapper.parseFile(CParserWithLocationMapper.java:95)
+	at org.sosy_lab.cpachecker.cfa.CFACreator.parseToCFAs(CFACreator.java:645)
+	at org.sosy_lab.cpachecker.cfa.CFACreator.parseFileAndCreateCFA(CFACreator.java:437)
+	at temper.CPAWrapper.parse(CPAWrapper.java:188)
+	at temper.CpacheckerHandler.analyze(CpacheckerHandler.java:193)
+	at temper.CpacheckerHandler.analyze_source(CpacheckerHandler.java:220)
+	at cpachecker.cpaTcfaService$Processor$analyze_source.getResult(cpaTcfaService.java:641)
+	at cpachecker.cpaTcfaService$Processor$analyze_source.getResult(cpaTcfaService.java:620)
+	at org.apache.thrift.ProcessFunction.process(ProcessFunction.java:38)
+	at org.apache.thrift.TBaseProcessor.process(TBaseProcessor.java:39)
+	at org.apache.thrift.server.TSimpleServer.serve(TSimpleServer.java:80)
+	at temper.CPAServer.simple(CPAServer.java:54)
+	at temper.CPAServer$1.run(CPAServer.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.sosy_lab.cpachecker.cfa.parser.eclipse.c.CFAGenerationRuntimeException: File includes system headers, either preprocess it manually or specify -preprocess.
+	at org.sosy_lab.cpachecker.cfa.parser.eclipse.c.EclipseCParser.parse(EclipseCParser.java:318)
+	... 16 more
 
-Now attempting to run reachability ... 
-Result: FALSE
+Exception: Cpachecker_types.CPAException(_)
 </pre>
 </body>
 </html>

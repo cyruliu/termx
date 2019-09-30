@@ -14,6 +14,8 @@ simple2_fail.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_
 simple2_fail_2.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_fail_2.c.html
   -           simple2_fail_gcc81_O0_opt_debloat.cbc.c| FALSE    |    ERROR| FALSE(cex)|     TURE| (result here)
 simple2_fail_gcc81_O0_opt_debloat.cbc.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_fail_gcc81_O0_opt_debloat.cbc.c.html
+  -   simple2_fail_gcc81_O0_opt_debloat_trimmed.cbc.c| FALSE    |    ERROR| FALSE(cex)|     TURE| (result here)
+simple2_fail_gcc81_O0_opt_debloat_trimmed.cbc.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_fail_gcc81_O0_opt_debloat_trimmed.cbc.c.html
   -                   simple2_fail_gcc81_O0_snowman.c| FALSE    |    ERROR| FALSE(cex)|     TURE| (result here)
 simple2_fail_gcc81_O0_snowman.c RESULT : https://cyruliu.github.io/termx/results//temper-simple2_fail_gcc81_O0_snowman.c.html
   -           simple2_fail_gcc81_O0_snowman_reinter.c| FALSE    | FALSE(cex)| FALSE(cex)|     TURE| (result here)
