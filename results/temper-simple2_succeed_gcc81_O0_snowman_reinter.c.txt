@@ -1,0 +1,17 @@
+Connecting to localhost (127.0.0.1) ...
+Connecting to Cpachecker Thrift Server ...
+Analyzing source code directly ...
+Result: TRUE
+Parsing ...
+Parsing successes:
+E2337 BlankEdge: (FunctionEntryNode N6351 ) -> (GeneralNode N6357 )
+E2338 DeclarationEdge: (GeneralNode N6357 ) - (_Z16__VERIFIER_errori(NumericType[int] edi)) -> (GeneralNode N6358 )
+E2339 DeclarationEdge: (GeneralNode N6358 ) - (fun_4004a1()) -> (GeneralNode N6359 )
+E2340 DeclarationEdge: (GeneralNode N6359 ) - (NumericType[char] _edata = LiteralExpr(0)) -> (GeneralNode N6360 )
+E2341 DeclarationEdge: (GeneralNode N6360 ) - (main()) -> (GeneralNode N6361 )
+E2342 BlankEdge: (GeneralNode N6361 ) -> (GeneralNode N6352 )
+E2343 BlankEdge: (GeneralNode N6352 ) -> (GeneralNode N6353 )
+E2344 ReturnStatementEdge: (GeneralNode N6353 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N6350 )
+
+Now attempting to run reachability ... 
+Result: TRUE

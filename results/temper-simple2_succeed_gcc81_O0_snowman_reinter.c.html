@@ -294,6 +294,23 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
+Connecting to localhost (127.0.0.1) ...
+Connecting to Cpachecker Thrift Server ...
+Analyzing source code directly ...
+Result: TRUE
+Parsing ...
+Parsing successes:
+E2337 BlankEdge: (FunctionEntryNode N6351 ) -&gt; (GeneralNode N6357 )
+E2338 DeclarationEdge: (GeneralNode N6357 ) - (_Z16__VERIFIER_errori(NumericType[int] edi)) -&gt; (GeneralNode N6358 )
+E2339 DeclarationEdge: (GeneralNode N6358 ) - (fun_4004a1()) -&gt; (GeneralNode N6359 )
+E2340 DeclarationEdge: (GeneralNode N6359 ) - (NumericType[char] _edata = LiteralExpr(0)) -&gt; (GeneralNode N6360 )
+E2341 DeclarationEdge: (GeneralNode N6360 ) - (main()) -&gt; (GeneralNode N6361 )
+E2342 BlankEdge: (GeneralNode N6361 ) -&gt; (GeneralNode N6352 )
+E2343 BlankEdge: (GeneralNode N6352 ) -&gt; (GeneralNode N6353 )
+E2344 ReturnStatementEdge: (GeneralNode N6353 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -&gt; (FunctionExitNode N6350 )
+
+Now attempting to run reachability ... 
+Result: TRUE
 </pre>
 </body>
 </html>

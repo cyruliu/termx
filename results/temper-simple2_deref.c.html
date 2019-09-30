@@ -294,6 +294,31 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
+Connecting to localhost (127.0.0.1) ...
+Connecting to Cpachecker Thrift Server ...
+Analyzing source code directly ...
+Result: FALSE
+Parsing ...
+summaryEdgeId: 2155
+Parsing successes:
+E2145 BlankEdge: (FunctionEntryNode N5824 ) -&gt; (GeneralNode N5832 )
+E2146 DeclarationEdge: (GeneralNode N5832 ) - (__VERIFIER_error()) -&gt; (GeneralNode N5833 )
+E2147 DeclarationEdge: (GeneralNode N5833 ) - (main()) -&gt; (GeneralNode N5834 )
+E2148 BlankEdge: (GeneralNode N5834 ) -&gt; (GeneralNode N5825 )
+E2149 DeclarationEdge: (GeneralNode N5825 ) - (PointerType[NumericType[int]*, is_const:false, is_volatile:false] a) -&gt; (GeneralNode N5826 )
+E2150 StatementEdge: (GeneralNode N5826 ) - (PointerExpr(LHSExpr(IdExpr(a:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]) = Expr(LiteralExpr(-1))) -&gt; (GeneralNode N5827 )
+E2151 DeclarationEdge: (GeneralNode N5827 ) - (NumericType[int] b = LHSExpr(PointerExpr(LHSExpr(IdExpr(a:PointerType[NumericType[int]*, is_const:false, is_volatile:false])): NumericType[int]))) -&gt; (GeneralNode N5828 )
+E2152 AssumeEdge: (GeneralNode N5828 ) - (BinExpr(LHSExpr(IdExpr(b:NumericType[int]))=LiteralExpr(-1))) -&gt; (GeneralNode N5830 )
+E2153 AssumeEdge: (GeneralNode N5828 ) - (not BinExpr(LHSExpr(IdExpr(b:NumericType[int]))=LiteralExpr(-1))) -&gt; (GeneralNode N5829 )
+E2156 FunctionCallEdge: (GeneralNode N5830 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; VoidType]))(): E2155 FunctionSummaryEdge: (GeneralNode N5830 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; VoidType]))(): ) -&gt; (GeneralNode N5831 )) -&gt; (FunctionEntryNode N5821 )
+E2157 BlankEdge: (FunctionEntryNode N5821 ) -&gt; (GeneralNode N5822 )
+E2158 BlankEdge: (GeneralNode N5822 ) -&gt; (FunctionExitNode N5820 )
+E2159 FunctionReturnEdge: (FunctionExitNode N5820 ) - (E2155 FunctionSummaryEdge: (GeneralNode N5830 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; VoidType]))(): ) -&gt; (GeneralNode N5831 )) -&gt; (GeneralNode N5831 )
+E2160 BlankEdge: (GeneralNode N5831 ) -&gt; (GeneralNode N5829 )
+E2154 BlankEdge: (GeneralNode N5829 ) -&gt; (FunctionExitNode N5823 )
+
+Now attempting to run reachability ... 
+Result: FALSE
 </pre>
 </body>
 </html>
