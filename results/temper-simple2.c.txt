@@ -4,15 +4,15 @@ Analyzing source code directly ...
 Result: TRUE
 Parsing ...
 Parsing successes:
-E1444 BlankEdge: (FunctionEntryNode N3939 ) -> (GeneralNode N3947 )
-E1445 DeclarationEdge: (GeneralNode N3947 ) - (main()) -> (GeneralNode N3948 )
-E1446 BlankEdge: (GeneralNode N3948 ) -> (GeneralNode N3940 )
-E1447 DeclarationEdge: (GeneralNode N3940 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N3941 )
-E1448 BlankEdge: (GeneralNode N3941 ) -> (GeneralNode N3942 )
-E1449 DeclarationEdge: (GeneralNode N3942 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N3943 )
-E1450 StatementEdge: (GeneralNode N3943 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N3944 )
-E1451 StatementEdge: (GeneralNode N3944 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N3945 )
-E1452 ReturnStatementEdge: (GeneralNode N3945 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N3938 )
+E1768 BlankEdge: (FunctionEntryNode N4815 ) -> (GeneralNode N4823 )
+E1769 DeclarationEdge: (GeneralNode N4823 ) - (main()) -> (GeneralNode N4824 )
+E1770 BlankEdge: (GeneralNode N4824 ) -> (GeneralNode N4816 )
+E1771 DeclarationEdge: (GeneralNode N4816 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N4817 )
+E1772 BlankEdge: (GeneralNode N4817 ) -> (GeneralNode N4818 )
+E1773 DeclarationEdge: (GeneralNode N4818 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N4819 )
+E1774 StatementEdge: (GeneralNode N4819 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N4820 )
+E1775 StatementEdge: (GeneralNode N4820 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N4821 )
+E1776 ReturnStatementEdge: (GeneralNode N4821 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N4814 )
 
 Now attempting to run reachability ... 
 Result: TRUE
