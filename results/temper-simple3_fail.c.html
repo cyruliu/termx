@@ -297,6 +297,26 @@ span { display: inline-block; }
 Connecting to localhost (127.0.0.1) ...
 Connecting to Cpachecker Thrift Server ...
 Analyzing source code directly ...
+Result: FALSE
+Parsing ...
+summaryEdgeId: 2569
+Parsing successes:
+E2561 BlankEdge: (FunctionEntryNode N6920 ) -&gt; (GeneralNode N6930 )
+E2562 DeclarationEdge: (GeneralNode N6930 ) - (__VERIFIER_error()) -&gt; (GeneralNode N6931 )
+E2563 DeclarationEdge: (GeneralNode N6931 ) - (main()) -&gt; (GeneralNode N6932 )
+E2564 BlankEdge: (GeneralNode N6932 ) -&gt; (GeneralNode N6921 )
+E2565 DeclarationEdge: (GeneralNode N6921 ) - (NumericType[int] x = LiteralExpr(1)) -&gt; (GeneralNode N6922 )
+E2566 AssumeEdge: (GeneralNode N6922 ) - (BinExpr(LHSExpr(IdExpr(x:NumericType[int]))&gt;LiteralExpr(0))) -&gt; (GeneralNode N6924 )
+E2567 AssumeEdge: (GeneralNode N6922 ) - (not BinExpr(LHSExpr(IdExpr(x:NumericType[int]))&gt;LiteralExpr(0))) -&gt; (GeneralNode N6923 )
+E2570 FunctionCallEdge: (GeneralNode N6924 ) - (IdExpr(x:NumericType[int]) = CallExpr(LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; NumericType[int]]))()): E2569 FunctionSummaryEdge: (GeneralNode N6924 ) - (IdExpr(x:NumericType[int]) = CallExpr(LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; NumericType[int]]))()): ) -&gt; (GeneralNode N6925 )) -&gt; (FunctionEntryNode N6917 )
+E2571 BlankEdge: (FunctionEntryNode N6917 ) -&gt; (GeneralNode N6918 )
+E2572 BlankEdge: (GeneralNode N6918 ) -&gt; (FunctionExitNode N6916 )
+E2573 FunctionReturnEdge: (FunctionExitNode N6916 ) - (E2569 FunctionSummaryEdge: (GeneralNode N6924 ) - (IdExpr(x:NumericType[int]) = CallExpr(LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -&gt; NumericType[int]]))()): ) -&gt; (GeneralNode N6925 )) -&gt; (GeneralNode N6925 )
+E2574 BlankEdge: (GeneralNode N6925 ) -&gt; (GeneralNode N6923 )
+E2568 ReturnStatementEdge: (GeneralNode N6923 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -&gt; (FunctionExitNode N6919 )
+
+Now attempting to run reachability ... 
+Result: FALSE
 </pre>
 </body>
 </html>

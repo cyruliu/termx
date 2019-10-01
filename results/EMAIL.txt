@@ -1,3 +1,9 @@
 *** RESULTS OF RUNNING ALL BENCHMARKS ***
                                Source Code  |Expecting Result   |Temper Result   |CPAchekcer Result   |GCC -O0   |GCC -O2
+  -                                         simple3.c| UnKown   |     TRUE|    ERROR| FALSE(cex)|     TURE| 
+  -                                       simple3_1.c| UnKown   | FALSE(cex)|    ERROR| FALSE(cex)|     TURE| 
+  -                                  simple3_1_fail.c| FALSE    |    ERROR|    ERROR| FALSE(cex)|     TURE| 
+  -                               simple3_1_succeed.c| TRUE     |    ERROR|    ERROR| FALSE(cex)|     TURE| 
+  -                                    simple3_fail.c| FALSE    | FALSE(cex)|    ERROR| FALSE(cex)|     TURE| 
+  -                                 simple3_succeed.c| TRUE     |     TRUE|    ERROR| FALSE(cex)|     TURE| 
  RESULTS SUMMARY : https://cyruliu.github.io/termx/results//termx_summary.html

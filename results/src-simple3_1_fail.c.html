@@ -294,6 +294,17 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
+#include &lt;stdio.h&gt;
+int __attribute__ ((noinline)) __VERIFIER_error (int a) {
+    printf(&quot;Hello, I am here!&quot;);
+    return a+1;
+}
+
+int main() {
+  int x = 1;
+  if (x&gt;0) __VERIFIER_error (x);
+  return x;
+}
 </pre>
 </body>
 </html>

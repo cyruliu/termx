@@ -294,6 +294,16 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
+int __VERIFIER_error() {return 2;}
+int random () {}
+int main() {
+  int x = 0;
+  int y = random(); 
+  if (x + y == y) { __VERIFIER_error();}
+  return 0;
+ERROR: return (-1);
+}
+
 </pre>
 </body>
 </html>
