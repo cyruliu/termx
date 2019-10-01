@@ -294,6 +294,126 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
+
+int64_t __gmon_start__ = 0;
+
+void _init() {
+    int64_t rax1;
+
+    rax1 = __gmon_start__;
+    if (rax1) {
+        rax1();
+    }
+    return;
+}
+
+int64_t deregister_tm_clones() {
+    int64_t rax1;
+
+    *reinterpret_cast&lt;int32_t*&gt;(&amp;rax1) = 0x402010;
+    *reinterpret_cast&lt;int32_t*&gt;(reinterpret_cast&lt;int64_t&gt;(&amp;rax1) + 4) = 0;
+    if (1 || (*reinterpret_cast&lt;int32_t*&gt;(&amp;rax1) = 0, *reinterpret_cast&lt;int32_t*&gt;(reinterpret_cast&lt;int64_t&gt;(&amp;rax1) + 4) = 0, 1)) {
+        return rax1;
+    } else {
+        goto 0;
+    }
+}
+
+/* __VERIFIER_error(int) */
+int64_t _Z16__VERIFIER_errori(int32_t edi) {
+    int64_t rax2;
+
+    *reinterpret_cast&lt;int32_t*&gt;(&amp;rax2) = edi + 1;
+    *reinterpret_cast&lt;int32_t*&gt;(reinterpret_cast&lt;int64_t&gt;(&amp;rax2) + 4) = 0;
+    return rax2;
+}
+
+int64_t __libc_start_main = 0;
+
+int64_t main();
+
+void __libc_csu_init(int32_t edi, int64_t rsi, int64_t rdx);
+
+void __libc_csu_fini();
+
+void _start() {
+    void* rsp1;
+    int64_t rdx2;
+    int64_t rax3;
+
+    rsp1 = reinterpret_cast&lt;void*&gt;(reinterpret_cast&lt;int64_t&gt;(__zero_stack_offset()) + 8);
+    __libc_start_main(main, __return_address(), rsp1, __libc_csu_init, __libc_csu_fini, rdx2, (reinterpret_cast&lt;uint64_t&gt;(rsp1) &amp; 0xfffffffffffffff0) - 8 - 8, rax3);
+    __asm__(&quot;hlt &quot;);
+}
+
+void _fini() {
+    return;
+}
+
+void fun_40050b() {
+    return;
+}
+
+void __libc_csu_init(int32_t edi, int64_t rsi, int64_t rdx) {
+    int64_t r15_4;
+    int64_t r14_5;
+    int32_t r13d6;
+    int64_t rbx7;
+    int64_t rdi8;
+
+    r15_4 = rdx;
+    r14_5 = rsi;
+    r13d6 = edi;
+    _init();
+    if (!0) {
+        *reinterpret_cast&lt;int32_t*&gt;(&amp;rbx7) = 0;
+        *reinterpret_cast&lt;int32_t*&gt;(reinterpret_cast&lt;int64_t&gt;(&amp;rbx7) + 4) = 0;
+        do {
+            *reinterpret_cast&lt;int32_t*&gt;(&amp;rdi8) = r13d6;
+            *reinterpret_cast&lt;int32_t*&gt;(reinterpret_cast&lt;int64_t&gt;(&amp;rdi8) + 4) = 0;
+            *reinterpret_cast&lt;int64_t*&gt;(0x401df0 + rbx7 * 8)(rdi8, r14_5, r15_4);
+            ++rbx7;
+        } while (1 != rbx7);
+    }
+    return;
+}
+
+void __libc_csu_fini() {
+    return;
+}
+
+int64_t fun_4004a1() {
+    if (1 || 1) {
+        return 0;
+    } else {
+        goto 0;
+    }
+}
+
+signed char _edata = 0;
+
+int64_t __do_global_dtors_aux() {
+    int1_t zf1;
+    int64_t rax2;
+
+    zf1 = _edata == 0;
+    if (!zf1) 
+        goto 0x400510;
+    rax2 = deregister_tm_clones();
+    _edata = 1;
+    return rax2;
+}
+
+void frame_dummy() {
+    goto 0x4004b0;
+}
+
+int64_t main() {
+    if (!1) {
+        _Z16__VERIFIER_errori(-1);
+    }
+    return 0;
+}
 </pre>
 </body>
 </html>

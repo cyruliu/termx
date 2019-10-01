@@ -294,6 +294,16 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
+void __VERIFIER_error () {}
+
+void main () {
+    int *a;
+    *a = -1;
+    int b = *a;
+    if (b == -1)
+        __VERIFIER_error ();
+
+}
 </pre>
 </body>
 </html>

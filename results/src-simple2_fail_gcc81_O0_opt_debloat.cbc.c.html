@@ -294,6 +294,603 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
+/* Provide Declarations */
+#include &lt;stdarg.h&gt;
+#include &lt;setjmp.h&gt;
+#include &lt;limits.h&gt;
+#include &lt;stdint.h&gt;
+// #include &lt;math.h&gt;
+#ifndef __cplusplus
+typedef unsigned char bool;
+#endif
+
+#ifndef _MSC_VER
+#define __forceinline __attribute__((always_inline)) inline
+#endif
+
+#if defined(__GNUC__)
+#define  __ATTRIBUTELIST__(x) __attribute__(x)
+#else
+#define  __ATTRIBUTELIST__(x)  
+#endif
+
+#ifdef _MSC_VER  /* Can only support &quot;linkonce&quot; vars with GCC */
+#define __attribute__(X)
+#endif
+
+
+
+/* Global Declarations */
+
+/* Types Declarations */
+struct l_struct_union_OC_anon;
+struct l_struct_struct_OC_ArchState;
+struct l_struct_struct_OC_uint64v8_t;
+struct l_struct_union_OC_vec512_t;
+struct l_struct_union_OC_VectorReg;
+struct l_struct_struct_OC_ArithFlags;
+struct l_struct_union_OC_SegmentSelector;
+struct l_struct_struct_OC_Segments;
+struct l_struct_struct_OC_Reg;
+struct l_struct_struct_OC_AddressSpace;
+struct l_struct_struct_OC_GPR;
+struct l_struct_struct_OC_anon_OC_3;
+struct l_struct_struct_OC_X87Stack;
+struct l_struct_struct_OC_uint64v1_t;
+struct l_struct_union_OC_vec64_t;
+struct l_struct_struct_OC_anon_OC_4;
+struct l_struct_struct_OC_MMX;
+struct l_struct_struct_OC_FPUStatusFlags;
+struct l_struct_union_OC_FPUAbridgedTagWord;
+struct l_struct_union_OC_FPUControlStatus;
+struct l_struct_struct_OC_float80_t;
+struct l_struct_union_OC_anon_OC_11;
+struct l_struct_struct_OC_FPUStackElem;
+struct l_struct_struct_OC_uint128v1_t;
+struct l_struct_union_OC_vec128_t;
+struct l_struct_struct_OC_FpuFXSAVE;
+struct l_struct_struct_OC_anon_OC_13;
+struct l_struct_union_OC_FPU;
+struct l_struct_struct_OC_SegmentShadow;
+struct l_struct_struct_OC_SegmentCaches;
+struct l_struct_struct_OC_State;
+
+/* Function definitions */
+
+/* Types Definitions */
+struct l_struct_union_OC_anon {
+  uint64_t field0;
+};
+struct l_struct_struct_OC_ArchState {
+  uint32_t field0;
+  uint32_t field1;
+  struct l_struct_union_OC_anon field2;
+};
+struct l_array_8_uint64_t {
+  uint64_t array[8];
+};
+struct l_struct_struct_OC_uint64v8_t {
+  struct l_array_8_uint64_t field0;
+};
+struct l_struct_union_OC_vec512_t {
+  struct l_struct_struct_OC_uint64v8_t field0;
+};
+struct l_struct_union_OC_VectorReg {
+  struct l_struct_union_OC_vec512_t field0;
+};
+struct l_array_32_struct_AC_l_struct_union_OC_VectorReg {
+  struct l_struct_union_OC_VectorReg array[32];
+};
+struct l_struct_struct_OC_ArithFlags {
+  uint8_t field0;
+  uint8_t field1;
+  uint8_t field2;
+  uint8_t field3;
+  uint8_t field4;
+  uint8_t field5;
+  uint8_t field6;
+  uint8_t field7;
+  uint8_t field8;
+  uint8_t field9;
+  uint8_t field10;
+  uint8_t field11;
+  uint8_t field12;
+  uint8_t field13;
+  uint8_t field14;
+  uint8_t field15;
+};
+struct l_struct_union_OC_SegmentSelector {
+  uint16_t field0;
+};
+struct l_struct_struct_OC_Segments {
+  uint16_t field0;
+  struct l_struct_union_OC_SegmentSelector field1;
+  uint16_t field2;
+  struct l_struct_union_OC_SegmentSelector field3;
+  uint16_t field4;
+  struct l_struct_union_OC_SegmentSelector field5;
+  uint16_t field6;
+  struct l_struct_union_OC_SegmentSelector field7;
+  uint16_t field8;
+  struct l_struct_union_OC_SegmentSelector field9;
+  uint16_t field10;
+  struct l_struct_union_OC_SegmentSelector field11;
+};
+struct l_struct_struct_OC_Reg {
+  struct l_struct_union_OC_anon field0;
+};
+struct l_struct_struct_OC_AddressSpace {
+  uint64_t field0;
+  struct l_struct_struct_OC_Reg field1;
+  uint64_t field2;
+  struct l_struct_struct_OC_Reg field3;
+  uint64_t field4;
+  struct l_struct_struct_OC_Reg field5;
+  uint64_t field6;
+  struct l_struct_struct_OC_Reg field7;
+  uint64_t field8;
+  struct l_struct_struct_OC_Reg field9;
+  uint64_t field10;
+  struct l_struct_struct_OC_Reg field11;
+};
+struct l_struct_struct_OC_GPR {
+  uint64_t field0;
+  struct l_struct_struct_OC_Reg field1;
+  uint64_t field2;
+  struct l_struct_struct_OC_Reg field3;
+  uint64_t field4;
+  struct l_struct_struct_OC_Reg field5;
+  uint64_t field6;
+  struct l_struct_struct_OC_Reg field7;
+  uint64_t field8;
+  struct l_struct_struct_OC_Reg field9;
+  uint64_t field10;
+  struct l_struct_struct_OC_Reg field11;
+  uint64_t field12;
+  struct l_struct_struct_OC_Reg field13;
+  uint64_t field14;
+  struct l_struct_struct_OC_Reg field15;
+  uint64_t field16;
+  struct l_struct_struct_OC_Reg field17;
+  uint64_t field18;
+  struct l_struct_struct_OC_Reg field19;
+  uint64_t field20;
+  struct l_struct_struct_OC_Reg field21;
+  uint64_t field22;
+  struct l_struct_struct_OC_Reg field23;
+  uint64_t field24;
+  struct l_struct_struct_OC_Reg field25;
+  uint64_t field26;
+  struct l_struct_struct_OC_Reg field27;
+  uint64_t field28;
+  struct l_struct_struct_OC_Reg field29;
+  uint64_t field30;
+  struct l_struct_struct_OC_Reg field31;
+  uint64_t field32;
+  struct l_struct_struct_OC_Reg field33;
+};
+struct l_struct_struct_OC_anon_OC_3 {
+  uint64_t field0;
+  double field1;
+};
+struct l_array_8_struct_AC_l_struct_struct_OC_anon_OC_3 {
+  struct l_struct_struct_OC_anon_OC_3 array[8];
+};
+struct l_struct_struct_OC_X87Stack {
+  struct l_array_8_struct_AC_l_struct_struct_OC_anon_OC_3 field0;
+};
+struct l_array_1_uint64_t {
+  uint64_t array[1];
+};
+struct l_struct_struct_OC_uint64v1_t {
+  struct l_array_1_uint64_t field0;
+};
+struct l_struct_union_OC_vec64_t {
+  struct l_struct_struct_OC_uint64v1_t field0;
+};
+struct l_struct_struct_OC_anon_OC_4 {
+  uint64_t field0;
+  struct l_struct_union_OC_vec64_t field1;
+};
+struct l_array_8_struct_AC_l_struct_struct_OC_anon_OC_4 {
+  struct l_struct_struct_OC_anon_OC_4 array[8];
+};
+struct l_struct_struct_OC_MMX {
+  struct l_array_8_struct_AC_l_struct_struct_OC_anon_OC_4 field0;
+};
+struct l_array_4_uint8_t {
+  uint8_t array[4];
+};
+struct l_struct_struct_OC_FPUStatusFlags {
+  uint8_t field0;
+  uint8_t field1;
+  uint8_t field2;
+  uint8_t field3;
+  uint8_t field4;
+  uint8_t field5;
+  uint8_t field6;
+  uint8_t field7;
+  uint8_t field8;
+  uint8_t field9;
+  uint8_t field10;
+  uint8_t field11;
+  uint8_t field12;
+  uint8_t field13;
+  uint8_t field14;
+  uint8_t field15;
+  uint8_t field16;
+  uint8_t field17;
+  uint8_t field18;
+  uint8_t field19;
+  struct l_array_4_uint8_t field20;
+};
+struct l_struct_union_OC_FPUAbridgedTagWord {
+  uint8_t field0;
+};
+struct l_struct_union_OC_FPUControlStatus {
+  uint32_t field0;
+};
+struct l_array_10_uint8_t {
+  uint8_t array[10];
+};
+struct l_struct_struct_OC_float80_t {
+  struct l_array_10_uint8_t field0;
+};
+struct l_struct_union_OC_anon_OC_11 {
+  struct l_struct_struct_OC_float80_t field0;
+};
+struct l_array_6_uint8_t {
+  uint8_t array[6];
+};
+struct l_struct_struct_OC_FPUStackElem {
+  struct l_struct_union_OC_anon_OC_11 field0;
+  struct l_array_6_uint8_t field1;
+};
+struct l_array_8_struct_AC_l_struct_struct_OC_FPUStackElem {
+  struct l_struct_struct_OC_FPUStackElem array[8];
+};
+#ifdef DEBUG
+struct l_array_1_uint128_t {
+  __uint128_t array[1];
+};
+struct l_struct_struct_OC_uint128v1_t {
+  struct l_array_1_uint128_t field0;
+};
+struct l_struct_union_OC_vec128_t {
+  struct l_struct_struct_OC_uint128v1_t field0;
+};
+struct l_array_16_struct_AC_l_struct_union_OC_vec128_t {
+  struct l_struct_union_OC_vec128_t array[16];
+};
+struct l_struct_struct_OC_FpuFXSAVE {
+  struct l_struct_union_OC_SegmentSelector field0;
+  struct l_struct_union_OC_SegmentSelector field1;
+  struct l_struct_union_OC_FPUAbridgedTagWord field2;
+  uint8_t field3;
+  uint16_t field4;
+  uint32_t field5;
+  struct l_struct_union_OC_SegmentSelector field6;
+  uint16_t field7;
+  uint32_t field8;
+  struct l_struct_union_OC_SegmentSelector field9;
+  uint16_t field10;
+  struct l_struct_union_OC_FPUControlStatus field11;
+  struct l_struct_union_OC_FPUControlStatus field12;
+  struct l_array_8_struct_AC_l_struct_struct_OC_FPUStackElem field13;
+  struct l_array_16_struct_AC_l_struct_union_OC_vec128_t field14;
+};
+#endif
+
+struct l_array_96_uint8_t {
+  uint8_t array[96];
+};
+#ifdef DEBUG
+struct l_struct_struct_OC_anon_OC_13 {
+  struct l_struct_struct_OC_FpuFXSAVE field0;
+  struct l_array_96_uint8_t field1;
+};
+struct l_struct_union_OC_FPU {
+  struct l_struct_struct_OC_anon_OC_13 field0;
+};
+#endif
+struct l_struct_struct_OC_SegmentShadow {
+  struct l_struct_union_OC_anon field0;
+  uint32_t field1;
+  uint32_t field2;
+};
+struct l_struct_struct_OC_SegmentCaches {
+  struct l_struct_struct_OC_SegmentShadow field0;
+  struct l_struct_struct_OC_SegmentShadow field1;
+  struct l_struct_struct_OC_SegmentShadow field2;
+  struct l_struct_struct_OC_SegmentShadow field3;
+  struct l_struct_struct_OC_SegmentShadow field4;
+  struct l_struct_struct_OC_SegmentShadow field5;
+};
+struct l_struct_struct_OC_State {
+  struct l_struct_struct_OC_ArchState field0;
+  struct l_array_32_struct_AC_l_struct_union_OC_VectorReg field1;
+  struct l_struct_struct_OC_ArithFlags field2;
+  struct l_struct_union_OC_anon field3;
+  struct l_struct_struct_OC_Segments field4;
+  struct l_struct_struct_OC_AddressSpace field5;
+  struct l_struct_struct_OC_GPR field6;
+  struct l_struct_struct_OC_X87Stack field7;
+  struct l_struct_struct_OC_MMX field8;
+  struct l_struct_struct_OC_FPUStatusFlags field9;
+  struct l_struct_union_OC_anon field10;
+#ifdef DEBUG
+  struct l_struct_union_OC_FPU field11;
+#endif
+  struct l_struct_struct_OC_SegmentCaches field12;
+};
+
+/* External Global Variable Declarations */
+extern uint64_t DR0;
+extern uint64_t DR1;
+extern uint64_t DR2;
+extern uint64_t DR3;
+extern uint64_t DR4;
+extern uint64_t DR5;
+extern uint64_t DR6;
+extern uint64_t DR7;
+extern struct l_struct_union_OC_anon gCR0;
+extern struct l_struct_union_OC_anon gCR1;
+extern struct l_struct_union_OC_anon gCR2;
+extern struct l_struct_union_OC_anon gCR3;
+extern struct l_struct_union_OC_anon gCR4;
+extern struct l_struct_union_OC_anon gCR8;
+
+/* Function Declarations */
+
+
+/* Global Variable Definitions and Initialization */
+
+
+/* LLVM Intrinsic Builtin Function Bodies */
+static __forceinline uint64_t llvm_select_u64(bool condition, uint64_t iftrue, uint64_t ifnot) {
+  uint64_t r;
+  r = condition ? iftrue : ifnot;
+  return r;
+}
+static __forceinline uint32_t llvm_add_u32(uint32_t a, uint32_t b) {
+  uint32_t r = a + b;
+  return r;
+}
+static __forceinline uint64_t llvm_add_u64(uint64_t a, uint64_t b) {
+  uint64_t r = a + b;
+  return r;
+}
+static __forceinline uint32_t llvm_lshr_u32(uint32_t a, uint32_t b) {
+  uint32_t r = a &gt;&gt; b;
+  return r;
+}
+static __forceinline uint8_t llvm_and_u8(uint8_t a, uint8_t b) {
+  uint8_t r = a &amp; b;
+  return r;
+}
+static __forceinline uint8_t llvm_xor_u8(uint8_t a, uint8_t b) {
+  uint8_t r = a ^ b;
+  return r;
+}
+
+// binpang, added ctopop c implementation
+static __forceinline uint32_t llvm_OC_ctpop_OC_i32(uint32_t x) {
+ uint32_t c;
+  for (c = 0; x != 0; x &gt;&gt;= 1)
+     if (x &amp; 1)
+       c++;
+   return c;
+}
+/*
+static __forceinline uint32_t llvm_OC_ctpop_OC_i32(uint32_t a) {
+  uint32_t r;
+  r = LLVMCountPopulation(8 * sizeof(a), &amp;a);
+  return r;
+}
+*/
+
+// binpang, add stack prototype
+#define kStackSize (1UL&lt;&lt;20UL)
+char dummyStack[kStackSize];
+struct l_struct_struct_OC_State global_state;
+
+int main(){
+	//struct l_struct_struct_OC_State *tmp = malloc(sizeof(struct l_struct_struct_OC_State));
+	//memset(tmp, 0, sizeof(struct l_struct_struct_OC_State));
+	struct l_struct_struct_OC_State *tmp = &amp;global_state;
+	// initialize the dummy stack
+	tmp-&gt;field6.field13.field0.field0 = &amp;dummyStack[kStackSize - 0x10];
+	tmp-&gt;field6.field15.field0.field0 = &amp;dummyStack[kStackSize - 0x8];
+	(dummyStack[kStackSize - 0x10]) = (void*)0x40000000; // dummy return address
+	// call func =&gt; push rip; jmp function addr 
+	sub_400531_main(tmp, (uint64_t)0, (void*)0);
+	return 0;
+}
+
+/* Function Bodies */
+
+void* sub_400522__Z16__VERIFIER_errori(struct l_struct_struct_OC_State* llvm_cbe_tmp__1, uint64_t llvm_cbe_tmp__2, void* llvm_cbe_tmp__3) {
+  uint32_t llvm_cbe_reg2mem_20_alloca_20_point;
+  uint64_t* llvm_cbe_tmp__4;
+  uint64_t* llvm_cbe_tmp__5;
+  uint32_t llvm_cbe_tmp__6;    /* Address-exposed local */
+  uint64_t llvm_cbe_tmp__7;
+  uint64_t llvm_cbe_tmp__8;
+  uint64_t llvm_cbe_tmp__9;
+  uint64_t llvm_cbe_tmp__10;
+  uint32_t llvm_cbe_tmp__11;
+  uint32_t llvm_cbe_tmp__12;
+  uint32_t llvm_cbe_tmp__13;
+  uint32_t llvm_cbe_tmp__14;
+  uint32_t llvm_cbe_tmp__15;
+  uint64_t llvm_cbe_tmp__16;
+  uint64_t llvm_cbe_tmp__17;
+
+  llvm_cbe_reg2mem_20_alloca_20_point = ((uint32_t)0);
+  llvm_cbe_tmp__4 = (&amp;llvm_cbe_tmp__1-&gt;field6.field13.field0.field0);
+  llvm_cbe_tmp__5 = (&amp;llvm_cbe_tmp__1-&gt;field6.field15.field0.field0);
+  llvm_cbe_tmp__7 = *llvm_cbe_tmp__5;
+  llvm_cbe_tmp__8 = *llvm_cbe_tmp__4;
+  llvm_cbe_tmp__9 = llvm_add_u64(llvm_cbe_tmp__8, UINT64_C(18446744073709551608));
+  *(((uint64_t*)(uintptr_t)llvm_cbe_tmp__9)) = llvm_cbe_tmp__7;
+  llvm_cbe_tmp__10 = ((uint64_t)(uintptr_t)(&amp;llvm_cbe_tmp__6));
+  llvm_cbe_tmp__11 = *(((uint32_t*)((&amp;llvm_cbe_tmp__1-&gt;field6.field11.field0))));
+  llvm_cbe_tmp__6 = llvm_cbe_tmp__11;
+  llvm_cbe_tmp__12 = llvm_cbe_tmp__6;
+  llvm_cbe_tmp__13 = llvm_add_u32(llvm_cbe_tmp__12, 1);
+  *((&amp;llvm_cbe_tmp__1-&gt;field6.field1.field0.field0)) = (((uint64_t)(uint32_t)llvm_cbe_tmp__13));
+  *((&amp;llvm_cbe_tmp__1-&gt;field2.field1)) = (((uint8_t)(bool)((((((llvm_cbe_tmp__12 == 4294967295u)&amp;1)) | (((llvm_cbe_tmp__13 == 0u)&amp;1)))&amp;1))));
+  llvm_cbe_tmp__14 = llvm_OC_ctpop_OC_i32((llvm_cbe_tmp__13 &amp; 255));
+  *((&amp;llvm_cbe_tmp__1-&gt;field2.field3)) = (llvm_xor_u8((llvm_and_u8((((uint8_t)llvm_cbe_tmp__14)), 1)), 1));
+  *((&amp;llvm_cbe_tmp__1-&gt;field2.field5)) = (llvm_and_u8((((uint8_t)(llvm_lshr_u32((llvm_cbe_tmp__13 ^ llvm_cbe_tmp__12), 4)))), 1));
+  *((&amp;llvm_cbe_tmp__1-&gt;field2.field7)) = (((uint8_t)(bool)(((llvm_cbe_tmp__13 == 0u)&amp;1))));
+  llvm_cbe_tmp__15 = llvm_lshr_u32(llvm_cbe_tmp__13, 31);
+  *((&amp;llvm_cbe_tmp__1-&gt;field2.field9)) = (((uint8_t)llvm_cbe_tmp__15));
+  *((&amp;llvm_cbe_tmp__1-&gt;field2.field13)) = (((uint8_t)(bool)((((llvm_add_u32((llvm_cbe_tmp__15 ^ (llvm_lshr_u32(llvm_cbe_tmp__12, 31))), llvm_cbe_tmp__15)) == 2u)&amp;1))));
+  llvm_cbe_tmp__16 = *(((uint64_t*)(uintptr_t)llvm_cbe_tmp__9));
+  *llvm_cbe_tmp__5 = llvm_cbe_tmp__16;
+  llvm_cbe_tmp__17 = *(((uint64_t*)(uintptr_t)llvm_cbe_tmp__8));
+  *((&amp;llvm_cbe_tmp__1-&gt;field6.field33.field0.field0)) = llvm_cbe_tmp__17;
+  *llvm_cbe_tmp__4 = (llvm_add_u64(llvm_cbe_tmp__8, UINT64_C(8)));
+  return llvm_cbe_tmp__3;
+}
+
+
+void sub_400531_main(struct l_struct_struct_OC_State* llvm_cbe_tmp__18, uint64_t llvm_cbe_tmp__19, void* llvm_cbe_tmp__20) {
+  uint64_t llvm_cbe__2e_reg2mem;    /* Address-exposed local */
+  void* llvm_cbe__2e_reg2mem1;    /* Address-exposed local */
+  uint64_t llvm_cbe__2e_reg2mem3;    /* Address-exposed local */
+  uint32_t llvm_cbe__2e_reg2mem6;    /* Address-exposed local */
+  uint64_t llvm_cbe__2e_reg2mem11;    /* Address-exposed local */
+  uint64_t llvm_cbe__2e_reg2mem15;    /* Address-exposed local */
+  uint64_t* llvm_cbe__2e_reg2mem18;    /* Address-exposed local */
+  uint64_t* llvm_cbe__2e_reg2mem23;    /* Address-exposed local */
+  uint64_t* llvm_cbe__2e_reg2mem27;    /* Address-exposed local */
+  uint64_t* llvm_cbe__2e_reg2mem29;    /* Address-exposed local */
+  void* llvm_cbe__2e_reg2mem31;    /* Address-exposed local */
+  uint64_t llvm_cbe__2e_reg2mem33;    /* Address-exposed local */
+  uint32_t llvm_cbe_reg2mem_20_alloca_20_point;
+  uint32_t llvm_cbe_tmp__21;    /* Address-exposed local */
+  uint64_t* llvm_cbe__2e_reload22;
+  uint64_t llvm_cbe_tmp__22;
+  uint64_t* llvm_cbe__2e_reload26;
+  uint64_t llvm_cbe_tmp__23;
+  uint64_t llvm_cbe__2e_reload17;
+  uint64_t llvm_cbe__2e_reload14;
+  uint64_t llvm_cbe__2e_reload13;
+  uint64_t* llvm_cbe__2e_reload21;
+  uint64_t llvm_cbe_tmp__24;
+  uint32_t llvm_cbe_tmp__25;
+  uint32_t llvm_cbe__2e_reload10;
+  uint32_t llvm_cbe_tmp__26;
+  uint32_t llvm_cbe__2e_reload9;
+  uint32_t llvm_cbe__2e_reload8;
+  uint8_t llvm_cbe_tmp__27;
+  bool llvm_cbe_tmp__28;
+  uint64_t llvm_cbe__2e_reload12;
+  uint32_t llvm_cbe__2e_reload7;
+  uint64_t llvm_cbe__2e_reload5;
+  uint64_t llvm_cbe__2e_reload4;
+  uint64_t llvm_cbe__2e_reload16;
+  uint64_t llvm_cbe_tmp__29;
+  uint64_t* llvm_cbe__2e_reload25;
+  void* llvm_cbe_tmp__30;
+  uint64_t* llvm_cbe__2e_reload20;
+  uint64_t llvm_cbe_tmp__31;
+  uint64_t llvm_cbe__2e_reload;
+  void* llvm_cbe__2e_reload2;
+  uint64_t llvm_cbe__2e_reload34;
+  void* llvm_cbe__2e_reload32;
+  uint64_t* llvm_cbe__2e_reload28;
+  uint64_t llvm_cbe_tmp__32;
+  uint64_t* llvm_cbe__2e_reload19;
+  uint64_t llvm_cbe_tmp__33;
+  uint64_t* llvm_cbe__2e_reload30;
+  uint64_t* llvm_cbe__2e_reload24;
+
+  llvm_cbe_reg2mem_20_alloca_20_point = ((uint32_t)0);
+  llvm_cbe__2e_reg2mem29 = ((&amp;llvm_cbe_tmp__18-&gt;field6.field33.field0.field0));
+  llvm_cbe__2e_reg2mem27 = ((&amp;llvm_cbe_tmp__18-&gt;field6.field1.field0.field0));
+  llvm_cbe__2e_reg2mem23 = ((&amp;llvm_cbe_tmp__18-&gt;field6.field13.field0.field0));
+  llvm_cbe__2e_reg2mem18 = ((&amp;llvm_cbe_tmp__18-&gt;field6.field15.field0.field0));
+  llvm_cbe__2e_reload22 = llvm_cbe__2e_reg2mem18;
+  llvm_cbe_tmp__22 = *llvm_cbe__2e_reload22;
+  llvm_cbe__2e_reload26 = llvm_cbe__2e_reg2mem23;
+  llvm_cbe_tmp__23 = *llvm_cbe__2e_reload26;
+  llvm_cbe__2e_reg2mem15 = llvm_cbe_tmp__23;
+  llvm_cbe__2e_reload17 = llvm_cbe__2e_reg2mem15;
+  llvm_cbe__2e_reg2mem11 = (llvm_add_u64(llvm_cbe__2e_reload17, UINT64_C(18446744073709551608)));
+  llvm_cbe__2e_reload14 = llvm_cbe__2e_reg2mem11;
+  *(((uint64_t*)(uintptr_t)llvm_cbe__2e_reload14)) = llvm_cbe_tmp__22;
+  llvm_cbe__2e_reload13 = llvm_cbe__2e_reg2mem11;
+  llvm_cbe__2e_reload21 = llvm_cbe__2e_reg2mem18;
+  *llvm_cbe__2e_reload21 = llvm_cbe__2e_reload13;
+  llvm_cbe_tmp__24 = ((uint64_t)(uintptr_t)(&amp;llvm_cbe_tmp__21));
+  llvm_cbe_tmp__21 = 1;
+  llvm_cbe_tmp__25 = llvm_cbe_tmp__21;
+  llvm_cbe__2e_reg2mem6 = llvm_cbe_tmp__25;
+  *((&amp;llvm_cbe_tmp__18-&gt;field2.field1)) = 0;
+  llvm_cbe__2e_reload10 = llvm_cbe__2e_reg2mem6;
+  llvm_cbe_tmp__26 = llvm_OC_ctpop_OC_i32((llvm_cbe__2e_reload10 &amp; 255));
+  *((&amp;llvm_cbe_tmp__18-&gt;field2.field3)) = (llvm_xor_u8((llvm_and_u8((((uint8_t)llvm_cbe_tmp__26)), 1)), 1));
+  *((&amp;llvm_cbe_tmp__18-&gt;field2.field5)) = 0;
+  llvm_cbe__2e_reload9 = llvm_cbe__2e_reg2mem6;
+  *((&amp;llvm_cbe_tmp__18-&gt;field2.field7)) = (((uint8_t)(bool)(((llvm_cbe__2e_reload9 == 0u)&amp;1))));
+  llvm_cbe__2e_reload8 = llvm_cbe__2e_reg2mem6;
+  llvm_cbe_tmp__27 = ((uint8_t)(llvm_lshr_u32(llvm_cbe__2e_reload8, 31)));
+  *((&amp;llvm_cbe_tmp__18-&gt;field2.field9)) = llvm_cbe_tmp__27;
+  *((&amp;llvm_cbe_tmp__18-&gt;field2.field13)) = 0;
+  llvm_cbe_tmp__28 = (((((llvm_cbe__2e_reload9 == 0u)&amp;1)) | (((llvm_cbe_tmp__27 != ((uint8_t)0))&amp;1)))&amp;1);
+  llvm_cbe__2e_reg2mem3 = (llvm_add_u64((llvm_select_u64(llvm_cbe_tmp__28, UINT64_C(31), UINT64_C(21))), llvm_cbe_tmp__19));
+  if (llvm_cbe_tmp__28) {
+    goto llvm_cbe_block_400531_2e_block_400550_crit_edge;
+  } else {
+    goto llvm_cbe_block_400546;
+  }
+
+llvm_cbe_block_400531_2e_block_400550_crit_edge:
+  llvm_cbe__2e_reload12 = llvm_cbe__2e_reg2mem11;
+  llvm_cbe__2e_reg2mem31 = llvm_cbe_tmp__20;
+  llvm_cbe__2e_reg2mem33 = llvm_cbe__2e_reload12;
+  goto llvm_cbe_block_400550;
+
+llvm_cbe_block_400546:
+  llvm_cbe__2e_reload7 = llvm_cbe__2e_reg2mem6;
+  *((&amp;llvm_cbe_tmp__18-&gt;field6.field11.field0.field0)) = (((uint64_t)(uint32_t)llvm_cbe__2e_reload7));
+  llvm_cbe__2e_reload5 = llvm_cbe__2e_reg2mem3;
+  llvm_cbe__2e_reload4 = llvm_cbe__2e_reg2mem3;
+  llvm_cbe__2e_reload16 = llvm_cbe__2e_reg2mem15;
+  llvm_cbe_tmp__29 = llvm_add_u64(llvm_cbe__2e_reload16, UINT64_C(18446744073709551584));
+  *(((uint64_t*)(uintptr_t)llvm_cbe_tmp__29)) = (llvm_add_u64(llvm_cbe__2e_reload4, UINT64_C(10)));
+  llvm_cbe__2e_reload25 = llvm_cbe__2e_reg2mem23;
+  *llvm_cbe__2e_reload25 = llvm_cbe_tmp__29;
+  llvm_cbe_tmp__30 = sub_400522__Z16__VERIFIER_errori(llvm_cbe_tmp__18, (llvm_add_u64(llvm_cbe__2e_reload5, UINT64_C(18446744073709551580))), llvm_cbe_tmp__20);
+  llvm_cbe__2e_reg2mem1 = llvm_cbe_tmp__30;
+  llvm_cbe__2e_reload20 = llvm_cbe__2e_reg2mem18;
+  llvm_cbe_tmp__31 = *llvm_cbe__2e_reload20;
+  llvm_cbe__2e_reg2mem = llvm_cbe_tmp__31;
+  llvm_cbe__2e_reload = llvm_cbe__2e_reg2mem;
+  llvm_cbe__2e_reload2 = llvm_cbe__2e_reg2mem1;
+  llvm_cbe__2e_reg2mem31 = llvm_cbe__2e_reload2;
+  llvm_cbe__2e_reg2mem33 = llvm_cbe__2e_reload;
+  goto llvm_cbe_block_400550;
+
+llvm_cbe_block_400550:
+  llvm_cbe__2e_reload34 = llvm_cbe__2e_reg2mem33;
+  llvm_cbe__2e_reload32 = llvm_cbe__2e_reg2mem31;
+  llvm_cbe__2e_reload28 = llvm_cbe__2e_reg2mem27;
+  *llvm_cbe__2e_reload28 = UINT64_C(0);
+  llvm_cbe_tmp__32 = *(((uint64_t*)(uintptr_t)llvm_cbe__2e_reload34));
+  llvm_cbe__2e_reload19 = llvm_cbe__2e_reg2mem18;
+  *llvm_cbe__2e_reload19 = llvm_cbe_tmp__32;
+  llvm_cbe_tmp__33 = *(((uint64_t*)(uintptr_t)(llvm_add_u64(llvm_cbe__2e_reload34, UINT64_C(8)))));
+  llvm_cbe__2e_reload30 = llvm_cbe__2e_reg2mem29;
+  *llvm_cbe__2e_reload30 = llvm_cbe_tmp__33;
+  llvm_cbe__2e_reload24 = llvm_cbe__2e_reg2mem23;
+  *llvm_cbe__2e_reload24 = (llvm_add_u64(llvm_cbe__2e_reload34, UINT64_C(16)));
+  //return llvm_cbe__2e_reload32;
+}
+
 </pre>
 </body>
 </html>

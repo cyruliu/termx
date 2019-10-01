@@ -294,6 +294,24 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
+Connecting to localhost (127.0.0.1) ...
+Connecting to Cpachecker Thrift Server ...
+Analyzing source code directly ...
+Result: TRUE
+Parsing ...
+Parsing successes:
+E2938 BlankEdge: (FunctionEntryNode N7908 ) -&gt; (GeneralNode N7916 )
+E2939 DeclarationEdge: (GeneralNode N7916 ) - (main()) -&gt; (GeneralNode N7917 )
+E2940 BlankEdge: (GeneralNode N7917 ) -&gt; (GeneralNode N7909 )
+E2941 DeclarationEdge: (GeneralNode N7909 ) - (NumericType[int] x = LiteralExpr(0)) -&gt; (GeneralNode N7910 )
+E2942 BlankEdge: (GeneralNode N7910 ) -&gt; (GeneralNode N7911 )
+E2943 DeclarationEdge: (GeneralNode N7911 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -&gt; (GeneralNode N7912 )
+E2944 StatementEdge: (GeneralNode N7912 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -&gt; (GeneralNode N7913 )
+E2945 StatementEdge: (GeneralNode N7913 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -&gt; (GeneralNode N7914 )
+E2946 ReturnStatementEdge: (GeneralNode N7914 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -&gt; (FunctionExitNode N7907 )
+
+Now attempting to run reachability ... 
+Result: TRUE
 </pre>
 </body>
 </html>

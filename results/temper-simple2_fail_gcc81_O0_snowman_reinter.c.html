@@ -294,6 +294,31 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
+Connecting to localhost (127.0.0.1) ...
+Connecting to Cpachecker Thrift Server ...
+Analyzing source code directly ...
+Result: FALSE
+Parsing ...
+summaryEdgeId: 3074
+Parsing successes:
+E3067 BlankEdge: (FunctionEntryNode N8248 ) -&gt; (GeneralNode N8254 )
+E3068 DeclarationEdge: (GeneralNode N8254 ) - (_Z16__VERIFIER_errori(NumericType[int] edi)) -&gt; (GeneralNode N8255 )
+E3069 DeclarationEdge: (GeneralNode N8255 ) - (fun_4004a1()) -&gt; (GeneralNode N8256 )
+E3070 DeclarationEdge: (GeneralNode N8256 ) - (NumericType[char] _edata = LiteralExpr(0)) -&gt; (GeneralNode N8257 )
+E3071 DeclarationEdge: (GeneralNode N8257 ) - (main()) -&gt; (GeneralNode N8258 )
+E3072 BlankEdge: (GeneralNode N8258 ) -&gt; (GeneralNode N8249 )
+E3073 BlankEdge: (GeneralNode N8249 ) -&gt; (GeneralNode N8251 )
+E3075 FunctionCallEdge: (GeneralNode N8251 ) - (LHSExpr(IdExpr(_Z16__VERIFIER_errori:FunctionType[NumericType[int] -&gt; NumericType[int]]))(LiteralExpr(1)): E3074 FunctionSummaryEdge: (GeneralNode N8251 ) - (LHSExpr(IdExpr(_Z16__VERIFIER_errori:FunctionType[NumericType[int] -&gt; NumericType[int]]))(LiteralExpr(1)): ) -&gt; (GeneralNode N8252 )) -&gt; (FunctionEntryNode N8234 )
+E3076 BlankEdge: (FunctionEntryNode N8234 ) -&gt; (GeneralNode N8235 )
+E3077 DeclarationEdge: (GeneralNode N8235 ) - (NumericType[int] rax2) -&gt; (GeneralNode N8236 )
+E3078 StatementEdge: (GeneralNode N8236 ) - (IdExpr(rax2:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(edi:NumericType[int]))+LiteralExpr(1)))) -&gt; (GeneralNode N8237 )
+E3079 ReturnStatementEdge: (GeneralNode N8237 ) - (returnLHSExpr(IdExpr(rax2:NumericType[int]))IdExpr(__retval__:NumericType[int]) = Expr(LHSExpr(IdExpr(rax2:NumericType[int])))) -&gt; (FunctionExitNode N8233 )
+E3080 FunctionReturnEdge: (FunctionExitNode N8233 ) - (E3074 FunctionSummaryEdge: (GeneralNode N8251 ) - (LHSExpr(IdExpr(_Z16__VERIFIER_errori:FunctionType[NumericType[int] -&gt; NumericType[int]]))(LiteralExpr(1)): ) -&gt; (GeneralNode N8252 )) -&gt; (GeneralNode N8252 )
+E3081 BlankEdge: (GeneralNode N8252 ) -&gt; (GeneralNode N8250 )
+E3082 ReturnStatementEdge: (GeneralNode N8250 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -&gt; (FunctionExitNode N8247 )
+
+Now attempting to run reachability ... 
+Result: FALSE
 </pre>
 </body>
 </html>
