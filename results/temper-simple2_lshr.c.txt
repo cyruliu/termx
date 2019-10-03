@@ -3,25 +3,25 @@ Connecting to Cpachecker Thrift Server ...
 Analyzing source code directly ...
 Result: TRUE
 Parsing ...
-summaryEdgeId: 3435
+summaryEdgeId: 3759
 Parsing successes:
-E3425 BlankEdge: (FunctionEntryNode N9208 ) -> (GeneralNode N9219 )
-E3426 DeclarationEdge: (GeneralNode N9219 ) - (__VERIFIER_error()) -> (GeneralNode N9220 )
-E3427 DeclarationEdge: (GeneralNode N9220 ) - (main()) -> (GeneralNode N9221 )
-E3428 BlankEdge: (GeneralNode N9221 ) -> (GeneralNode N9209 )
-E3429 DeclarationEdge: (GeneralNode N9209 ) - (NumericType[int] x = LiteralExpr(-1)) -> (GeneralNode N9210 )
-E3430 DeclarationEdge: (GeneralNode N9210 ) - (NumericType[int] y = BinExpr(LHSExpr(IdExpr(x:NumericType[int]))>>LiteralExpr(31))) -> (GeneralNode N9211 )
-E3431 DeclarationEdge: (GeneralNode N9211 ) - (NumericType[int] a = BinExpr(LHSExpr(IdExpr(y:NumericType[int]))!=LiteralExpr(0))) -> (GeneralNode N9212 )
-E3432 DeclarationEdge: (GeneralNode N9212 ) - (NumericType[int] z = BinExpr(LHSExpr(IdExpr(a:NumericType[int]))|LiteralExpr(0))) -> (GeneralNode N9213 )
-E3433 AssumeEdge: (GeneralNode N9213 ) - (BinExpr(LHSExpr(IdExpr(z:NumericType[int]))=LiteralExpr(1))) -> (GeneralNode N9215 )
-E3434 AssumeEdge: (GeneralNode N9213 ) - (not BinExpr(LHSExpr(IdExpr(z:NumericType[int]))=LiteralExpr(1))) -> (GeneralNode N9216 )
-E3442 ReturnStatementEdge: (GeneralNode N9215 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N9207 )
-E3436 FunctionCallEdge: (GeneralNode N9216 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> NumericType[int]]))(): E3435 FunctionSummaryEdge: (GeneralNode N9216 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> NumericType[int]]))(): ) -> (GeneralNode N9218 )) -> (FunctionEntryNode N9204 )
-E3437 BlankEdge: (FunctionEntryNode N9204 ) -> (GeneralNode N9205 )
-E3438 ReturnStatementEdge: (GeneralNode N9205 ) - (returnLiteralExpr(1)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(1))) -> (FunctionExitNode N9203 )
-E3439 FunctionReturnEdge: (FunctionExitNode N9203 ) - (E3435 FunctionSummaryEdge: (GeneralNode N9216 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> NumericType[int]]))(): ) -> (GeneralNode N9218 )) -> (GeneralNode N9218 )
-E3440 BlankEdge: (GeneralNode N9218 ) -> (GeneralNode N9214 )
-E3441 BlankEdge: (GeneralNode N9214 ) -> (FunctionExitNode N9207 )
+E3749 BlankEdge: (FunctionEntryNode N10084 ) -> (GeneralNode N10095 )
+E3750 DeclarationEdge: (GeneralNode N10095 ) - (__VERIFIER_error()) -> (GeneralNode N10096 )
+E3751 DeclarationEdge: (GeneralNode N10096 ) - (main()) -> (GeneralNode N10097 )
+E3752 BlankEdge: (GeneralNode N10097 ) -> (GeneralNode N10085 )
+E3753 DeclarationEdge: (GeneralNode N10085 ) - (NumericType[int] x = LiteralExpr(-1)) -> (GeneralNode N10086 )
+E3754 DeclarationEdge: (GeneralNode N10086 ) - (NumericType[int] y = BinExpr(LHSExpr(IdExpr(x:NumericType[int]))>>LiteralExpr(31))) -> (GeneralNode N10087 )
+E3755 DeclarationEdge: (GeneralNode N10087 ) - (NumericType[int] a = BinExpr(LHSExpr(IdExpr(y:NumericType[int]))!=LiteralExpr(0))) -> (GeneralNode N10088 )
+E3756 DeclarationEdge: (GeneralNode N10088 ) - (NumericType[int] z = BinExpr(LHSExpr(IdExpr(a:NumericType[int]))|LiteralExpr(0))) -> (GeneralNode N10089 )
+E3757 AssumeEdge: (GeneralNode N10089 ) - (BinExpr(LHSExpr(IdExpr(z:NumericType[int]))=LiteralExpr(1))) -> (GeneralNode N10091 )
+E3758 AssumeEdge: (GeneralNode N10089 ) - (not BinExpr(LHSExpr(IdExpr(z:NumericType[int]))=LiteralExpr(1))) -> (GeneralNode N10092 )
+E3766 ReturnStatementEdge: (GeneralNode N10091 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N10083 )
+E3760 FunctionCallEdge: (GeneralNode N10092 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> NumericType[int]]))(): E3759 FunctionSummaryEdge: (GeneralNode N10092 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> NumericType[int]]))(): ) -> (GeneralNode N10094 )) -> (FunctionEntryNode N10080 )
+E3761 BlankEdge: (FunctionEntryNode N10080 ) -> (GeneralNode N10081 )
+E3762 ReturnStatementEdge: (GeneralNode N10081 ) - (returnLiteralExpr(1)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(1))) -> (FunctionExitNode N10079 )
+E3763 FunctionReturnEdge: (FunctionExitNode N10079 ) - (E3759 FunctionSummaryEdge: (GeneralNode N10092 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> NumericType[int]]))(): ) -> (GeneralNode N10094 )) -> (GeneralNode N10094 )
+E3764 BlankEdge: (GeneralNode N10094 ) -> (GeneralNode N10090 )
+E3765 BlankEdge: (GeneralNode N10090 ) -> (FunctionExitNode N10083 )
 
 Now attempting to run reachability ... 
 Result: TRUE
