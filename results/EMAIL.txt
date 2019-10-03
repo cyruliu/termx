@@ -1,18 +1,19 @@
 *** RESULTS OF RUNNING ALL BENCHMARKS ***
                                Source Code  |Expecting Result   |Temper Result   |CPAchekcer Result   |GCC -O0   |GCC -O2
-  -                                         simple2.c| UnKown   |     TRUE|     TRUE| FALSE(cex)|     TURE| 
-  -                               simple2_1_succeed.c| TRUE     |     TRUE|     TRUE| FALSE(cex)|     TURE| 
-  -                                     simple2_bit.c| UnKown   | FALSE(cex)| FALSE(cex)| FALSE(cex)|     TURE| 
-  -                                   simple2_deref.c| UnKown   | FALSE(cex)| FALSE(cex)| FALSE(cex)|     TURE| 
-  -                                    simple2_fail.c| FALSE    | FALSE(cex)| FALSE(cex)| FALSE(cex)|     TURE| 
-  -                                  simple2_fail_2.c| FALSE    | FALSE(cex)|     TRUE| FALSE(cex)|     TURE| 
-  -           simple2_fail_gcc81_O0_opt_debloat.cbc.c| FALSE    |    ERROR|     TRUE| FALSE(cex)|     TURE| 
-  -   simple2_fail_gcc81_O0_opt_debloat_trimmed.cbc.c| FALSE    |    ERROR|  UNKNOWN| FALSE(cex)|     TURE| 
+  -                                         simple2.c| UnKown   |     TRUE|    ERROR| FALSE(cex)|     TURE| 
+  -                               simple2_1_succeed.c| TRUE     |     TRUE|    ERROR| FALSE(cex)|     TURE| 
+  -                                     simple2_bit.c| UnKown   | FALSE(cex)|    ERROR| FALSE(cex)|     TURE| 
+  -                                   simple2_deref.c| UnKown   | FALSE(cex)|    ERROR| FALSE(cex)|     TURE| 
+  -                                    simple2_fail.c| FALSE    | FALSE(cex)|    ERROR| FALSE(cex)|     TURE| 
+  -                                  simple2_fail_2.c| FALSE    | FALSE(cex)|    ERROR| FALSE(cex)|     TURE| 
+  -           simple2_fail_gcc81_O0_opt_debloat.cbc.c| FALSE    |    ERROR|    ERROR| FALSE(cex)|     TURE| 
+  -   simple2_fail_gcc81_O0_opt_debloat_trimmed.cbc.c| FALSE    |    ERROR|    ERROR| FALSE(cex)|     TURE| 
   -                   simple2_fail_gcc81_O0_snowman.c| FALSE    |    ERROR|    ERROR| FALSE(cex)|     TURE| 
-  -           simple2_fail_gcc81_O0_snowman_reinter.c| FALSE    | FALSE(cex)|     TRUE| FALSE(cex)|     TURE| 
-  -                                    simple2_lshr.c| UnKown   |     TRUE|     TRUE| FALSE(cex)|     TURE| 
-  -                                 simple2_succeed.c| TRUE     |     TRUE|     TRUE| FALSE(cex)|     TURE| 
-  -        simple2_succeed_gcc81_O0_opt_debloat.cbe.c| TRUE     |    ERROR|     TRUE| FALSE(cex)|     TURE| 
+  -           simple2_fail_gcc81_O0_snowman_reinter.c| FALSE    | FALSE(cex)|    ERROR| FALSE(cex)|     TURE| 
+  -                                    simple2_lshr.c| UnKown   |     TRUE|    ERROR| FALSE(cex)|     TURE| 
+  -                                 simple2_succeed.c| TRUE     |     TRUE|    ERROR| FALSE(cex)|     TURE| 
+  -        simple2_succeed_gcc81_O0_opt_debloat.cbe.c| TRUE     |    ERROR|    ERROR| FALSE(cex)|     TURE| 
+  -simple2_succeed_gcc81_O0_opt_debloat_trimmed.cbe.c| TRUE     |    ERROR|    ERROR| FALSE(cex)|     TURE| 
   -                simple2_succeed_gcc81_O0_snowman.c| TRUE     |    ERROR|    ERROR| FALSE(cex)|     TURE| 
-  -        simple2_succeed_gcc81_O0_snowman_reinter.c| TRUE     |     TRUE|     TRUE| FALSE(cex)|     TURE| 
+  -        simple2_succeed_gcc81_O0_snowman_reinter.c| TRUE     |     TRUE|    ERROR| FALSE(cex)|     TURE| 
  RESULTS SUMMARY : https://cyruliu.github.io/termx/results//termx_summary.html

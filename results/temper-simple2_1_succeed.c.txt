@@ -3,21 +3,21 @@ Connecting to Cpachecker Thrift Server ...
 Analyzing source code directly ...
 Result: TRUE
 Parsing ...
-summaryEdgeId: 3509
+summaryEdgeId: 3833
 Parsing successes:
-E3501 BlankEdge: (FunctionEntryNode N9437 ) -> (GeneralNode N9444 )
-E3502 DeclarationEdge: (GeneralNode N9444 ) - (__VERIFIER_error(NumericType[int] a)) -> (GeneralNode N9445 )
-E3503 DeclarationEdge: (GeneralNode N9445 ) - (main()) -> (GeneralNode N9446 )
-E3504 BlankEdge: (GeneralNode N9446 ) -> (GeneralNode N9438 )
-E3505 DeclarationEdge: (GeneralNode N9438 ) - (NumericType[int] x = LiteralExpr(-1)) -> (GeneralNode N9439 )
-E3506 AssumeEdge: (GeneralNode N9439 ) - (BinExpr(LHSExpr(IdExpr(x:NumericType[int]))=LiteralExpr(42))) -> (GeneralNode N9441 )
-E3507 AssumeEdge: (GeneralNode N9439 ) - (not BinExpr(LHSExpr(IdExpr(x:NumericType[int]))=LiteralExpr(42))) -> (GeneralNode N9440 )
-E3510 FunctionCallEdge: (GeneralNode N9441 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): E3509 FunctionSummaryEdge: (GeneralNode N9441 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N9442 )) -> (FunctionEntryNode N9433 )
-E3511 BlankEdge: (FunctionEntryNode N9433 ) -> (GeneralNode N9434 )
-E3512 ReturnStatementEdge: (GeneralNode N9434 ) - (returnBinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(2))IdExpr(__retval__:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(2)))) -> (FunctionExitNode N9432 )
-E3513 FunctionReturnEdge: (FunctionExitNode N9432 ) - (E3509 FunctionSummaryEdge: (GeneralNode N9441 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N9442 )) -> (GeneralNode N9442 )
-E3514 BlankEdge: (GeneralNode N9442 ) -> (GeneralNode N9440 )
-E3508 ReturnStatementEdge: (GeneralNode N9440 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N9436 )
+E3825 BlankEdge: (FunctionEntryNode N10313 ) -> (GeneralNode N10320 )
+E3826 DeclarationEdge: (GeneralNode N10320 ) - (__VERIFIER_error(NumericType[int] a)) -> (GeneralNode N10321 )
+E3827 DeclarationEdge: (GeneralNode N10321 ) - (main()) -> (GeneralNode N10322 )
+E3828 BlankEdge: (GeneralNode N10322 ) -> (GeneralNode N10314 )
+E3829 DeclarationEdge: (GeneralNode N10314 ) - (NumericType[int] x = LiteralExpr(-1)) -> (GeneralNode N10315 )
+E3830 AssumeEdge: (GeneralNode N10315 ) - (BinExpr(LHSExpr(IdExpr(x:NumericType[int]))=LiteralExpr(42))) -> (GeneralNode N10317 )
+E3831 AssumeEdge: (GeneralNode N10315 ) - (not BinExpr(LHSExpr(IdExpr(x:NumericType[int]))=LiteralExpr(42))) -> (GeneralNode N10316 )
+E3834 FunctionCallEdge: (GeneralNode N10317 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): E3833 FunctionSummaryEdge: (GeneralNode N10317 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N10318 )) -> (FunctionEntryNode N10309 )
+E3835 BlankEdge: (FunctionEntryNode N10309 ) -> (GeneralNode N10310 )
+E3836 ReturnStatementEdge: (GeneralNode N10310 ) - (returnBinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(2))IdExpr(__retval__:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(2)))) -> (FunctionExitNode N10308 )
+E3837 FunctionReturnEdge: (FunctionExitNode N10308 ) - (E3833 FunctionSummaryEdge: (GeneralNode N10317 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N10318 )) -> (GeneralNode N10318 )
+E3838 BlankEdge: (GeneralNode N10318 ) -> (GeneralNode N10316 )
+E3832 ReturnStatementEdge: (GeneralNode N10316 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N10312 )
 
 Now attempting to run reachability ... 
 Result: TRUE

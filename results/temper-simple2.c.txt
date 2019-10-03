@@ -4,15 +4,15 @@ Analyzing source code directly ...
 Result: TRUE
 Parsing ...
 Parsing successes:
-E3586 BlankEdge: (FunctionEntryNode N9660 ) -> (GeneralNode N9668 )
-E3587 DeclarationEdge: (GeneralNode N9668 ) - (main()) -> (GeneralNode N9669 )
-E3588 BlankEdge: (GeneralNode N9669 ) -> (GeneralNode N9661 )
-E3589 DeclarationEdge: (GeneralNode N9661 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N9662 )
-E3590 BlankEdge: (GeneralNode N9662 ) -> (GeneralNode N9663 )
-E3591 DeclarationEdge: (GeneralNode N9663 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N9664 )
-E3592 StatementEdge: (GeneralNode N9664 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N9665 )
-E3593 StatementEdge: (GeneralNode N9665 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N9666 )
-E3594 ReturnStatementEdge: (GeneralNode N9666 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N9659 )
+E3910 BlankEdge: (FunctionEntryNode N10536 ) -> (GeneralNode N10544 )
+E3911 DeclarationEdge: (GeneralNode N10544 ) - (main()) -> (GeneralNode N10545 )
+E3912 BlankEdge: (GeneralNode N10545 ) -> (GeneralNode N10537 )
+E3913 DeclarationEdge: (GeneralNode N10537 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N10538 )
+E3914 BlankEdge: (GeneralNode N10538 ) -> (GeneralNode N10539 )
+E3915 DeclarationEdge: (GeneralNode N10539 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N10540 )
+E3916 StatementEdge: (GeneralNode N10540 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N10541 )
+E3917 StatementEdge: (GeneralNode N10541 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N10542 )
+E3918 ReturnStatementEdge: (GeneralNode N10542 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N10535 )
 
 Now attempting to run reachability ... 
 Result: TRUE
