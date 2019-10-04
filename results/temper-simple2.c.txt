@@ -4,15 +4,15 @@ Analyzing source code directly ...
 Result: TRUE
 Parsing ...
 Parsing successes:
-E4234 BlankEdge: (FunctionEntryNode N11412 ) -> (GeneralNode N11420 )
-E4235 DeclarationEdge: (GeneralNode N11420 ) - (main()) -> (GeneralNode N11421 )
-E4236 BlankEdge: (GeneralNode N11421 ) -> (GeneralNode N11413 )
-E4237 DeclarationEdge: (GeneralNode N11413 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N11414 )
-E4238 BlankEdge: (GeneralNode N11414 ) -> (GeneralNode N11415 )
-E4239 DeclarationEdge: (GeneralNode N11415 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N11416 )
-E4240 StatementEdge: (GeneralNode N11416 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N11417 )
-E4241 StatementEdge: (GeneralNode N11417 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N11418 )
-E4242 ReturnStatementEdge: (GeneralNode N11418 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N11411 )
+E4558 BlankEdge: (FunctionEntryNode N12288 ) -> (GeneralNode N12296 )
+E4559 DeclarationEdge: (GeneralNode N12296 ) - (main()) -> (GeneralNode N12297 )
+E4560 BlankEdge: (GeneralNode N12297 ) -> (GeneralNode N12289 )
+E4561 DeclarationEdge: (GeneralNode N12289 ) - (NumericType[int] x = LiteralExpr(0)) -> (GeneralNode N12290 )
+E4562 BlankEdge: (GeneralNode N12290 ) -> (GeneralNode N12291 )
+E4563 DeclarationEdge: (GeneralNode N12291 ) - (NumericType[int] __CPAchecker_TMP_0 = LHSExpr(IdExpr(x:NumericType[int]))) -> (GeneralNode N12292 )
+E4564 StatementEdge: (GeneralNode N12292 ) - (IdExpr(x:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LiteralExpr(1)))) -> (GeneralNode N12293 )
+E4565 StatementEdge: (GeneralNode N12293 ) - (LHSExpr(IdExpr(__CPAchecker_TMP_0:NumericType[int]))) -> (GeneralNode N12294 )
+E4566 ReturnStatementEdge: (GeneralNode N12294 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N12287 )
 
 Now attempting to run reachability ... 
 Result: TRUE
