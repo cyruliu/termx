@@ -4,14 +4,14 @@ Analyzing source code directly ...
 Result: TRUE
 Parsing ...
 Parsing successes:
-E5099 BlankEdge: (FunctionEntryNode N13755 ) -> (GeneralNode N13761 )
-E5100 DeclarationEdge: (GeneralNode N13761 ) - (_Z16__VERIFIER_errori(NumericType[int] edi)) -> (GeneralNode N13762 )
-E5101 DeclarationEdge: (GeneralNode N13762 ) - (fun_4004a1()) -> (GeneralNode N13763 )
-E5102 DeclarationEdge: (GeneralNode N13763 ) - (NumericType[char] _edata = LiteralExpr(0)) -> (GeneralNode N13764 )
-E5103 DeclarationEdge: (GeneralNode N13764 ) - (main()) -> (GeneralNode N13765 )
-E5104 BlankEdge: (GeneralNode N13765 ) -> (GeneralNode N13756 )
-E5105 BlankEdge: (GeneralNode N13756 ) -> (GeneralNode N13757 )
-E5106 ReturnStatementEdge: (GeneralNode N13757 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N13754 )
+E5423 BlankEdge: (FunctionEntryNode N14631 ) -> (GeneralNode N14637 )
+E5424 DeclarationEdge: (GeneralNode N14637 ) - (_Z16__VERIFIER_errori(NumericType[int] edi)) -> (GeneralNode N14638 )
+E5425 DeclarationEdge: (GeneralNode N14638 ) - (fun_4004a1()) -> (GeneralNode N14639 )
+E5426 DeclarationEdge: (GeneralNode N14639 ) - (NumericType[char] _edata = LiteralExpr(0)) -> (GeneralNode N14640 )
+E5427 DeclarationEdge: (GeneralNode N14640 ) - (main()) -> (GeneralNode N14641 )
+E5428 BlankEdge: (GeneralNode N14641 ) -> (GeneralNode N14632 )
+E5429 BlankEdge: (GeneralNode N14632 ) -> (GeneralNode N14633 )
+E5430 ReturnStatementEdge: (GeneralNode N14633 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N14630 )
 
 Now attempting to run reachability ... 
 Result: TRUE
