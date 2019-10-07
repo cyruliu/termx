@@ -3,21 +3,21 @@ Connecting to Cpachecker Thrift Server ...
 Analyzing source code directly ...
 Result: FALSE
 Parsing ...
-summaryEdgeId: 5313
+summaryEdgeId: 5637
 Parsing successes:
-E5305 BlankEdge: (FunctionEntryNode N14287 ) -> (GeneralNode N14294 )
-E5306 DeclarationEdge: (GeneralNode N14294 ) - (__VERIFIER_error(NumericType[int] a)) -> (GeneralNode N14295 )
-E5307 DeclarationEdge: (GeneralNode N14295 ) - (main()) -> (GeneralNode N14296 )
-E5308 BlankEdge: (GeneralNode N14296 ) -> (GeneralNode N14288 )
-E5309 DeclarationEdge: (GeneralNode N14288 ) - (NumericType[int] x = LiteralExpr(1)) -> (GeneralNode N14289 )
-E5310 AssumeEdge: (GeneralNode N14289 ) - (BinExpr(LHSExpr(IdExpr(x:NumericType[int]))>LiteralExpr(0))) -> (GeneralNode N14291 )
-E5311 AssumeEdge: (GeneralNode N14289 ) - (not BinExpr(LHSExpr(IdExpr(x:NumericType[int]))>LiteralExpr(0))) -> (GeneralNode N14290 )
-E5314 FunctionCallEdge: (GeneralNode N14291 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): E5313 FunctionSummaryEdge: (GeneralNode N14291 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N14292 )) -> (FunctionEntryNode N14283 )
-E5315 BlankEdge: (FunctionEntryNode N14283 ) -> (GeneralNode N14284 )
-E5316 ReturnStatementEdge: (GeneralNode N14284 ) - (returnBinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(1))IdExpr(__retval__:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(1)))) -> (FunctionExitNode N14282 )
-E5317 FunctionReturnEdge: (FunctionExitNode N14282 ) - (E5313 FunctionSummaryEdge: (GeneralNode N14291 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N14292 )) -> (GeneralNode N14292 )
-E5318 BlankEdge: (GeneralNode N14292 ) -> (GeneralNode N14290 )
-E5312 ReturnStatementEdge: (GeneralNode N14290 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N14286 )
+E5629 BlankEdge: (FunctionEntryNode N15163 ) -> (GeneralNode N15170 )
+E5630 DeclarationEdge: (GeneralNode N15170 ) - (__VERIFIER_error(NumericType[int] a)) -> (GeneralNode N15171 )
+E5631 DeclarationEdge: (GeneralNode N15171 ) - (main()) -> (GeneralNode N15172 )
+E5632 BlankEdge: (GeneralNode N15172 ) -> (GeneralNode N15164 )
+E5633 DeclarationEdge: (GeneralNode N15164 ) - (NumericType[int] x = LiteralExpr(1)) -> (GeneralNode N15165 )
+E5634 AssumeEdge: (GeneralNode N15165 ) - (BinExpr(LHSExpr(IdExpr(x:NumericType[int]))>LiteralExpr(0))) -> (GeneralNode N15167 )
+E5635 AssumeEdge: (GeneralNode N15165 ) - (not BinExpr(LHSExpr(IdExpr(x:NumericType[int]))>LiteralExpr(0))) -> (GeneralNode N15166 )
+E5638 FunctionCallEdge: (GeneralNode N15167 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): E5637 FunctionSummaryEdge: (GeneralNode N15167 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N15168 )) -> (FunctionEntryNode N15159 )
+E5639 BlankEdge: (FunctionEntryNode N15159 ) -> (GeneralNode N15160 )
+E5640 ReturnStatementEdge: (GeneralNode N15160 ) - (returnBinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(1))IdExpr(__retval__:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LiteralExpr(1)))) -> (FunctionExitNode N15158 )
+E5641 FunctionReturnEdge: (FunctionExitNode N15158 ) - (E5637 FunctionSummaryEdge: (GeneralNode N15167 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int]))): ) -> (GeneralNode N15168 )) -> (GeneralNode N15168 )
+E5642 BlankEdge: (GeneralNode N15168 ) -> (GeneralNode N15166 )
+E5636 ReturnStatementEdge: (GeneralNode N15166 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N15162 )
 
 Now attempting to run reachability ... 
 Result: FALSE
