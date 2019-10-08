@@ -625,8 +625,8 @@ struct l_struct_struct_OC_State {
 
 /* Function Declarations */
 void* sub_4004bd_random(struct l_struct_struct_OC_State*, uint64_t, void*) __ATTRIBUTELIST__((noinline, nothrow));
-//void* sub_4004b2___VERIFIER_error(struct l_struct_struct_OC_State*, uint64_t, void*) __ATTRIBUTELIST__((noinline, nothrow));
-void* __VERIFIER_error(struct l_struct_struct_OC_State*, uint64_t, void*) __ATTRIBUTELIST__((noinline, nothrow));
+void* sub_4004b2___VERIFIER_error(struct l_struct_struct_OC_State*, uint64_t, void*) __ATTRIBUTELIST__((noinline, nothrow));
+//void* __VERIFIER_error(struct l_struct_struct_OC_State*, uint64_t, void*) __ATTRIBUTELIST__((noinline, nothrow));
 void* sub_4004c8_main(struct l_struct_struct_OC_State*, uint64_t, void*) __ATTRIBUTELIST__((noinline, nothrow));
 
 
@@ -717,8 +717,10 @@ void* sub_4004bd_random(struct l_struct_struct_OC_State* llvm_cbe_tmp__1, uint64
 }
 
 
-//void* sub_4004b2___VERIFIER_error(struct l_struct_struct_OC_State* llvm_cbe_tmp__11, uint64_t llvm_cbe_tmp__12, void* llvm_cbe_tmp__13) {
-void* __VERIFIER_error(struct l_struct_struct_OC_State* llvm_cbe_tmp__11, uint64_t llvm_cbe_tmp__12, void* llvm_cbe_tmp__13) {
+  extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+  void* sub_4004b2___VERIFIER_error(struct l_struct_struct_OC_State* llvm_cbe_tmp__11, uint64_t llvm_cbe_tmp__12, void* llvm_cbe_tmp__13) {
+//void* __VERIFIER_error(struct l_struct_struct_OC_State* llvm_cbe_tmp__11, uint64_t llvm_cbe_tmp__12, void* llvm_cbe_tmp__13) {
+  __VERIFIER_error ();
   uint64_t* llvm_cbe_tmp__14;
   uint64_t* llvm_cbe_tmp__15;
   uint64_t llvm_cbe_tmp__16;
@@ -849,8 +851,8 @@ llvm_cbe_block_4004ea:
   llvm_cbe_tmp__58 = llvm_add_u64(llvm_cbe_tmp__57, UINT64_C(18446744073709551608));
   *(((uint64_t*)(uintptr_t)llvm_cbe_tmp__58)) = (llvm_add_u64(llvm_cbe_tmp__52, UINT64_C(10)));
   *llvm_cbe_tmp__27 = llvm_cbe_tmp__58;
-//  llvm_cbe_tmp__59 = sub_4004b2___VERIFIER_error(llvm_cbe_tmp__21, (llvm_add_u64(llvm_cbe_tmp__52, UINT64_C(18446744073709551560))), llvm_cbe_tmp__46);
-  __VERIFIER_error(llvm_cbe_tmp__21, (llvm_add_u64(llvm_cbe_tmp__52, UINT64_C(18446744073709551560))), llvm_cbe_tmp__46);
+  llvm_cbe_tmp__59 = sub_4004b2___VERIFIER_error(llvm_cbe_tmp__21, (llvm_add_u64(llvm_cbe_tmp__52, UINT64_C(18446744073709551560))), llvm_cbe_tmp__46);
+//  __VERIFIER_error(llvm_cbe_tmp__21, (llvm_add_u64(llvm_cbe_tmp__52, UINT64_C(18446744073709551560))), llvm_cbe_tmp__46);
   llvm_cbe_tmp__53__PHI_TEMPORARY = llvm_cbe_tmp__59;   /* for PHI node */
   goto llvm_cbe_block_4004f4;
 
