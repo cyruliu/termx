@@ -294,10 +294,34 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
-Running CPAchecker with Java heap of size 10000M.
-Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
-Verification result: FALSE. Property violation (__VERIFIER_error (); called in line 428) found by chosen configuration.
-More details about the verification run can be found in the directory &quot;./output&quot;.
+Connecting to localhost (127.0.0.1) ...
+Connecting to Cpachecker Thrift Server ...
+Analyzing source code directly ...
+Exception on CpaThriftServer
+analyze: ERROR File includes system headers, either preprocess it manually or specify -preprocess.
+org.sosy_lab.cpachecker.exceptions.CParserException: File includes system headers, either preprocess it manually or specify -preprocess.
+	at org.sosy_lab.cpachecker.cfa.parser.eclipse.c.EclipseCParser.parse(EclipseCParser.java:335)
+	at org.sosy_lab.cpachecker.cfa.parser.eclipse.c.EclipseCParser.parseSomething(EclipseCParser.java:167)
+	at org.sosy_lab.cpachecker.cfa.parser.eclipse.c.EclipseCParser.parseString(EclipseCParser.java:215)
+	at org.sosy_lab.cpachecker.cfa.CParserWithLocationMapper.parseFile(CParserWithLocationMapper.java:95)
+	at org.sosy_lab.cpachecker.cfa.CFACreator.parseToCFAs(CFACreator.java:645)
+	at org.sosy_lab.cpachecker.cfa.CFACreator.parseFileAndCreateCFA(CFACreator.java:437)
+	at temper.CPAWrapper.parse(CPAWrapper.java:188)
+	at temper.CpacheckerHandler.analyze(CpacheckerHandler.java:193)
+	at temper.CpacheckerHandler.analyze_source(CpacheckerHandler.java:220)
+	at cpachecker.cpaTcfaService$Processor$analyze_source.getResult(cpaTcfaService.java:641)
+	at cpachecker.cpaTcfaService$Processor$analyze_source.getResult(cpaTcfaService.java:620)
+	at org.apache.thrift.ProcessFunction.process(ProcessFunction.java:38)
+	at org.apache.thrift.TBaseProcessor.process(TBaseProcessor.java:39)
+	at org.apache.thrift.server.TSimpleServer.serve(TSimpleServer.java:80)
+	at temper.CPAServer.simple(CPAServer.java:54)
+	at temper.CPAServer$1.run(CPAServer.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.sosy_lab.cpachecker.cfa.parser.eclipse.c.CFAGenerationRuntimeException: File includes system headers, either preprocess it manually or specify -preprocess.
+	at org.sosy_lab.cpachecker.cfa.parser.eclipse.c.EclipseCParser.parse(EclipseCParser.java:318)
+	... 16 more
+
+Exception: Cpachecker_types.CPAException(_)
 </pre>
 </body>
 </html>

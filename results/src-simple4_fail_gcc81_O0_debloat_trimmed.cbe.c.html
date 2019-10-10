@@ -829,7 +829,9 @@ void dummy_main(struct l_struct_struct_OC_State* llvm_cbe_tmp__21, uint64_t llvm
   *llvm_cbe_tmp__41 = (((uint8_t)(llvm_lshr_u32(llvm_cbe_tmp__50, 31))));
   *llvm_cbe_tmp__43 = 0;
   llvm_cbe_tmp__52 = llvm_add_u64(llvm_cbe_tmp__49, (llvm_select_u64((((llvm_cbe_tmp__50 == 0u)&amp;1)), UINT64_C(9), UINT64_C(19))));
-  if ((((llvm_cbe_tmp__50 == 0u)&amp;1))) {
+    if ((((llvm_cbe_tmp__50 == 0u)&amp;1))) {
+ // in cpachecker llvm_cbe_tmp__50 = 0
+//  if ((((0 == 0u)&amp;1))) {
     goto llvm_cbe_block_4004ea;
   } else {
     llvm_cbe_tmp__53__PHI_TEMPORARY = llvm_cbe_tmp__46;   /* for PHI node */
