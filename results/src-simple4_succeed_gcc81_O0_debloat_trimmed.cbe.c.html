@@ -749,6 +749,7 @@ void* sub_40049d_random1(struct l_struct_struct_OC_State* llvm_cbe_tmp__1, uint6
 void dummy_main(struct l_struct_struct_OC_State* llvm_cbe_tmp__21, uint64_t llvm_cbe_tmp__22, void* llvm_cbe_tmp__23) {
   uint64_t* llvm_cbe_tmp__24;
   struct l_struct_union_OC_anon* llvm_cbe_tmp__25;
+//  uint64_t* llvm_cbe_tmp__25;
   uint64_t* llvm_cbe_tmp__26;
   uint64_t* llvm_cbe_tmp__27;
   uint64_t* llvm_cbe_tmp__28;
@@ -773,7 +774,8 @@ void dummy_main(struct l_struct_struct_OC_State* llvm_cbe_tmp__21, uint64_t llvm
   uint64_t llvm_cbe_tmp__47;
   uint32_t llvm_cbe_tmp__48;
   uint64_t llvm_cbe_tmp__49;
-  uint32_t llvm_cbe_tmp__50;
+//  uint32_t llvm_cbe_tmp__50;
+  uint64_t llvm_cbe_tmp__50;
   uint32_t llvm_cbe_tmp__51;
   uint64_t llvm_cbe_tmp__52;
   void* llvm_cbe_tmp__53;
@@ -783,10 +785,13 @@ void dummy_main(struct l_struct_struct_OC_State* llvm_cbe_tmp__21, uint64_t llvm
   uint64_t llvm_cbe_tmp__56;
   uint64_t llvm_cbe_tmp__57;
   uint64_t llvm_cbe_tmp__58;
+  uint64_t* llvm_cbe_tmp__60;
   void* llvm_cbe_tmp__59;
 
   llvm_cbe_tmp__24 = (&amp;llvm_cbe_tmp__21-&gt;field6.field33.field0.field0);
   llvm_cbe_tmp__25 = (&amp;llvm_cbe_tmp__21-&gt;field6.field1.field0);
+//add more variable to walk around the typ cast avoiding Strict Aliasing Rule
+  llvm_cbe_tmp__60 = (&amp;llvm_cbe_tmp__21-&gt;field6.field1.field0.field0);
   llvm_cbe_tmp__26 = (&amp;llvm_cbe_tmp__25-&gt;field0);
   llvm_cbe_tmp__27 = (&amp;llvm_cbe_tmp__21-&gt;field6.field13.field0.field0);
   llvm_cbe_tmp__28 = (&amp;llvm_cbe_tmp__21-&gt;field6.field15.field0.field0);
@@ -821,7 +826,8 @@ void dummy_main(struct l_struct_struct_OC_State* llvm_cbe_tmp__21, uint64_t llvm
   llvm_cbe_tmp__48 = *(((uint32_t*)llvm_cbe_tmp__25));
   llvm_cbe_tmp__49 = *llvm_cbe_tmp__24;
   llvm_cbe_tmp__30 = llvm_cbe_tmp__48;
-  llvm_cbe_tmp__50 = llvm_cbe_tmp__30;
+  //llvm_cbe_tmp__50 = llvm_cbe_tmp__30;
+    llvm_cbe_tmp__50 = *llvm_cbe_tmp__60;
   *llvm_cbe_tmp__35 = 0;
   llvm_cbe_tmp__51 = llvm_oc_ctpop_oc_i32((llvm_cbe_tmp__50 &amp; 255));
   *llvm_cbe_tmp__37 = (llvm_xor_u8((llvm_and_u8((((uint8_t)llvm_cbe_tmp__51)), 1)), 1));

@@ -329,14 +329,18 @@ void* random1 (struct OC_State* tmp_1) {
 
 
 int main () {
-    uint32_t tmp_50;
-    struct OC_anon* tmp_25;
+   // uint32_t tmp_50;
+    uint64_t tmp_50;
+   // struct OC_anon* tmp_25;
+    uint64_t* tmp_25;
     struct OC_State global_state;
     struct OC_State* tmp_21 = &amp;global_state;
-    tmp_25 = (&amp;tmp_21-&gt;field6.field1.field0);
+//    tmp_25 = (&amp;tmp_21-&gt;field6.field1.field0);
+    tmp_25 = (&amp;tmp_21-&gt;field6.field1.field0.field0);
     void* tmp_46 = random1 (tmp_21);
  //   random1 (tmp_21);
-    tmp_50 = *(((uint32_t*)tmp_25));
+ //   tmp_50 = *(((uint32_t*)tmp_25));
+    tmp_50 = *(tmp_25);
     if ((tmp_50 == 0u)&amp;1)
 //    if ((1 == 0u)&amp;1)
     {
