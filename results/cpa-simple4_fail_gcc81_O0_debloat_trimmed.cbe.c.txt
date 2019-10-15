@@ -2,3 +2,4 @@ Running CPAchecker with Java heap of size 10000M.
 Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
 Verification result: FALSE. Property violation (__VERIFIER_error (); called in line 427) found by chosen configuration.
 More details about the verification run can be found in the directory "./output".
+Graphical representation included in the file "./output/Counterexample.2.html".
