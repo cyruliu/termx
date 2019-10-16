@@ -3,6 +3,7 @@
   -                                    simple4_fail.c| FALSE    |    ERROR| FALSE(cex)| FALSE(cex)|     TURE| 
   -               simple4_fail_gcc81_O0_debloat.cbe.c| FALSE    |    ERROR|     TRUE| FALSE(cex)|     TURE| 
   -       simple4_fail_gcc81_O0_debloat_trimmed.cbe.c| FALSE    |    ERROR| FALSE(cex)| FALSE(cex)|     TURE| 
+  -                         simple4_fail_struct_arg.c| FALSE    |    ERROR| FALSE(cex)| FALSE(cex)|     TURE| 
   -                                 simple4_succeed.c| TRUE     |    ERROR|     TRUE| FALSE(cex)|     TURE| 
   -            simple4_succeed_gcc81_O0_debloat.cbe.c| TRUE     |    ERROR|     TRUE| FALSE(cex)|     TURE| 
   -    simple4_succeed_gcc81_O0_debloat_trimmed.cbe.c| TRUE     |    ERROR|  UNKNOWN| FALSE(cex)|     TURE| 

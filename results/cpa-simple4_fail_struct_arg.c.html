@@ -294,65 +294,11 @@ span { display: inline-block; }
 
 <body class="f9 b9">
 <pre>
-#include &lt;stdlib.h&gt;
-#include &lt;stdarg.h&gt;
-#include &lt;setjmp.h&gt;
-#include &lt;limits.h&gt;
-#include &lt;stdint.h&gt;
-
-//extern void __VERIFIER_error() __attribute__((__noreturn__));
-extern void __VERIFIER_error() {}
-
-struct OC_anon;
-struct OC_State;
-struct OC_GPR;
-struct OC_Reg;
-struct OC_anon {
-    uint64_t field0;
-};
-struct OC_Reg {
-    struct OC_anon field0;
-};
-struct OC_GPR {
-    struct OC_Reg field1;
-};
-struct OC_State {
-    struct OC_GPR field6;
-};
-
-void random1 (struct OC_State*);
-
-void random1 (struct OC_State* tmp_1) {
-    *((&amp;tmp_1-&gt;field6.field1.field0.field0)) = UINT64_C(1);
- //   return (void*)0;
-}
-
-
-int main () {
-   // uint32_t tmp_50;
-    uint64_t tmp_50;
- //   struct OC_anon* tmp_25;
-    uint64_t* tmp_25;
-    struct OC_State global_state;
- //   struct OC_State* tmp_21 = malloc (sizeof (struct OC_State));
-  
-    struct OC_State* tmp_21 = &amp;global_state;
-//    tmp_25 = (&amp;tmp_21-&gt;field6.field1.field0);
-    tmp_25 = (&amp;tmp_21-&gt;field6.field1.field0.field0);
-//    void* tmp_46 = random1 (tmp_21);
-    random1 (tmp_21);
-//    tmp_50 = *(((uint64_t*)tmp_25));
-    tmp_50 = *(tmp_25);
-    if ((tmp_50 == 0u)&amp;1)
-//    if ((1 == 0u)&amp;1)
-    {
-        __VERIFIER_error();
-        return 0;
-    } else {
-        return 1;
-    }   
-
-}
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Verification result: FALSE. Property violation ( called in line 51) found by chosen configuration.
+More details about the verification run can be found in the directory &quot;./output&quot;.
+Graphical representation included in the file &quot;./output/Counterexample.2.html&quot;.
 </pre>
 </body>
 </html>
