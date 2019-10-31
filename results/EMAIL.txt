@@ -1,12 +1,9 @@
 *** RESULTS OF RUNNING ALL BENCHMARKS ***
                                Source Code  |Expecting Result   |Temper Result   |CPAchekcer Result   |GCC -O0   |GCC -O2
-  -                                    simple4_fail.c| FALSE    |    ERROR| FALSE(cex)| FALSE(cex)|     TURE| 
-  -               simple4_fail_gcc81_O0_debloat.cbe.c| FALSE    |    ERROR|     TRUE| FALSE(cex)|     TURE| 
-  -       simple4_fail_gcc81_O0_debloat_trimmed.cbe.c| FALSE    |    ERROR| FALSE(cex)| FALSE(cex)|     TURE| 
-  -                         simple4_fail_struct_arg.c| FALSE    |    ERROR| FALSE(cex)| FALSE(cex)|     TURE| 
-  -                                 simple4_succeed.c| TRUE     |    ERROR|     TRUE| FALSE(cex)|     TURE| 
-  -                            simple4_succeed_cast.c| TRUE     |    ERROR|     TRUE| FALSE(cex)|     TURE| 
-  -            simple4_succeed_gcc81_O0_debloat.cbe.c| TRUE     |    ERROR|     TRUE| FALSE(cex)|     TURE| 
-  -    simple4_succeed_gcc81_O0_debloat_trimmed.cbe.c| TRUE     |    ERROR|     TRUE| FALSE(cex)|     TURE| 
-  -                      simple4_succeed_struct_arg.c| TRUE     |    ERROR|     TRUE| FALSE(cex)|     TURE| 
+  -                                    simple5_fail.c| FALSE    | FALSE(cex)| FALSE(cex)| FALSE(cex)|     TURE| 
+  -               simple5_fail_gcc81_O0_debloat.cbe.c| FALSE    |    ERROR|     TRUE| FALSE(cex)|     TURE| 
+  -       simple5_fail_gcc81_O0_debloat_trimmed.cbe.c| FALSE    |    ERROR| FALSE(cex)| FALSE(cex)|     TURE| 
+  -                                 simple5_succeed.c| TRUE     |     TRUE|     TRUE| FALSE(cex)|     TURE| 
+  -    simple5_succeed_gcc81_O0_debloat_trimmed.cbe.c| TRUE     |    ERROR|     TRUE| FALSE(cex)|     TURE| 
+  -           simple5_succeed_gcc81_O0_delbloat.cbe.c| TRUE     |    ERROR|     TRUE| FALSE(cex)|     TURE| 
  RESULTS SUMMARY : https://cyruliu.github.io/termx/results//termx_summary.html
