@@ -296,42 +296,8 @@ span { display: inline-block; }
 <pre>
 Connecting to localhost (127.0.0.1) ...
 Connecting to Cpachecker Thrift Server ...
-Analyzing source code directly ...
-Exception on CpaThriftServer
-analyze: ERROR ttypeorg.sosy_lab.cpachecker.cfa.types.c.CTypedefType  tostring=jmp_buf 
-temper.ConverterException: ttypeorg.sosy_lab.cpachecker.cfa.types.c.CTypedefType  tostring=jmp_buf 
-	at temper.TTypeConverter.convert(TTypeConverter.java:128)
-	at temper.TASTConverter.convert(TASTConverter.java:42)
-	at temper.TASTConverter.lambda$convert$0(TASTConverter.java:56)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Collections$2.tryAdvance(Collections.java:4719)
-	at java.util.Collections$2.forEachRemaining(Collections.java:4727)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)
-	at temper.TASTConverter.convert(TASTConverter.java:56)
-	at temper.TASTConverter.convert(TASTConverter.java:114)
-	at temper.TCFAConverter.convert(TCFAConverter.java:257)
-	at temper.TCFAConverter.convert(TCFAConverter.java:428)
-	at temper.ConverterVisitor.visitEdge(ConverterVisitor.java:26)
-	at org.sosy_lab.cpachecker.util.CFATraversal$ForwardingCFAVisitor.visitEdge(CFATraversal.java:558)
-	at org.sosy_lab.cpachecker.util.CFATraversal.traverse(CFATraversal.java:198)
-	at org.sosy_lab.cpachecker.util.CFATraversal.traverseOnce(CFATraversal.java:225)
-	at temper.TCFAConverter.convert(TCFAConverter.java:53)
-	at temper.CpacheckerHandler.analyze(CpacheckerHandler.java:196)
-	at temper.CpacheckerHandler.analyze_source(CpacheckerHandler.java:220)
-	at cpachecker.cpaTcfaService$Processor$analyze_source.getResult(cpaTcfaService.java:641)
-	at cpachecker.cpaTcfaService$Processor$analyze_source.getResult(cpaTcfaService.java:620)
-	at org.apache.thrift.ProcessFunction.process(ProcessFunction.java:38)
-	at org.apache.thrift.TBaseProcessor.process(TBaseProcessor.java:39)
-	at org.apache.thrift.server.TSimpleServer.serve(TSimpleServer.java:80)
-	at temper.CPAServer.simple(CPAServer.java:54)
-	at temper.CPAServer$1.run(CPAServer.java:30)
-	at java.lang.Thread.run(Thread.java:748)
-
-Exception: Cpachecker_types.CPAException(_)
+Cannot connect to CpaThriftServer
+Exception: Thrift.Transport.E(1, &quot;TSocket: Could not connect to 127.0.0.1:9090 because: connect:Connection refused&quot;)
 </pre>
 </body>
 </html>

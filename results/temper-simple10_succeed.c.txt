@@ -1,44 +1,4 @@
 Connecting to localhost (127.0.0.1) ...
 Connecting to Cpachecker Thrift Server ...
-Analyzing source code directly ...
-Result: TRUE
-Parsing ...
-summaryEdgeId: 501
-summaryEdgeId: 483
-summaryEdgeId: 490
-summaryEdgeId: 509
-Parsing successes:
-E476 BlankEdge: (FunctionEntryNode N7077 ) -> (GeneralNode N7090 )
-E477 DeclarationEdge: (GeneralNode N7090 ) - (__VERIFIER_error()) -> (GeneralNode N7091 )
-E478 DeclarationEdge: (GeneralNode N7091 ) - (__VERIFIER_nondet_int(NumericType[int] n)) -> (GeneralNode N7092 )
-E479 DeclarationEdge: (GeneralNode N7092 ) - (sum(NumericType[int] a, NumericType[int] b)) -> (GeneralNode N7093 )
-E480 DeclarationEdge: (GeneralNode N7093 ) - (main()) -> (GeneralNode N7094 )
-E481 BlankEdge: (GeneralNode N7094 ) -> (GeneralNode N7078 )
-E482 DeclarationEdge: (GeneralNode N7078 ) - (NumericType[int] x) -> (GeneralNode N7079 )
-E484 FunctionCallEdge: (GeneralNode N7079 ) - (IdExpr(x:NumericType[int]) = CallExpr(LHSExpr(IdExpr(__VERIFIER_nondet_int:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(-1))): E483 FunctionSummaryEdge: (GeneralNode N7079 ) - (IdExpr(x:NumericType[int]) = CallExpr(LHSExpr(IdExpr(__VERIFIER_nondet_int:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(-1))): ) -> (GeneralNode N7080 )) -> (FunctionEntryNode N7065 )
-E485 BlankEdge: (FunctionEntryNode N7065 ) -> (GeneralNode N7066 )
-E486 ReturnStatementEdge: (GeneralNode N7066 ) - (returnLHSExpr(IdExpr(n:NumericType[int]))IdExpr(__retval__:NumericType[int]) = Expr(LHSExpr(IdExpr(n:NumericType[int])))) -> (FunctionExitNode N7064 )
-E487 FunctionReturnEdge: (FunctionExitNode N7064 ) - (E483 FunctionSummaryEdge: (GeneralNode N7079 ) - (IdExpr(x:NumericType[int]) = CallExpr(LHSExpr(IdExpr(__VERIFIER_nondet_int:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(-1))): ) -> (GeneralNode N7080 )) -> (GeneralNode N7080 )
-E488 FunctionReturnEdge: (FunctionExitNode N7064 ) - (E509 FunctionSummaryEdge: (GeneralNode N7081 ) - (IdExpr(y:NumericType[int]) = CallExpr(LHSExpr(IdExpr(__VERIFIER_nondet_int:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(2))): ) -> (GeneralNode N7082 )) -> (GeneralNode N7082 )
-E508 DeclarationEdge: (GeneralNode N7080 ) - (NumericType[int] y) -> (GeneralNode N7081 )
-E510 FunctionCallEdge: (GeneralNode N7081 ) - (IdExpr(y:NumericType[int]) = CallExpr(LHSExpr(IdExpr(__VERIFIER_nondet_int:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(2))): E509 FunctionSummaryEdge: (GeneralNode N7081 ) - (IdExpr(y:NumericType[int]) = CallExpr(LHSExpr(IdExpr(__VERIFIER_nondet_int:FunctionType[NumericType[int] -> NumericType[int]]))(LiteralExpr(2))): ) -> (GeneralNode N7082 )) -> (FunctionEntryNode N7065 )
-E489 DeclarationEdge: (GeneralNode N7082 ) - (NumericType[int] z) -> (GeneralNode N7083 )
-E491 FunctionCallEdge: (GeneralNode N7083 ) - (IdExpr(z:NumericType[int]) = CallExpr(LHSExpr(IdExpr(sum:FunctionType[NumericType[int] -> NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int])), LHSExpr(IdExpr(y:NumericType[int])))): E490 FunctionSummaryEdge: (GeneralNode N7083 ) - (IdExpr(z:NumericType[int]) = CallExpr(LHSExpr(IdExpr(sum:FunctionType[NumericType[int] -> NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int])), LHSExpr(IdExpr(y:NumericType[int])))): ) -> (GeneralNode N7084 )) -> (FunctionEntryNode N7069 )
-E492 BlankEdge: (FunctionEntryNode N7069 ) -> (GeneralNode N7070 )
-E493 AssumeEdge: (GeneralNode N7070 ) - (BinExpr(LHSExpr(IdExpr(a:NumericType[int]))<=LiteralExpr(0))) -> (GeneralNode N7072 )
-E494 AssumeEdge: (GeneralNode N7070 ) - (not BinExpr(LHSExpr(IdExpr(a:NumericType[int]))<=LiteralExpr(0))) -> (GeneralNode N7073 )
-E507 ReturnStatementEdge: (GeneralNode N7072 ) - (returnBinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LHSExpr(IdExpr(b:NumericType[int])))IdExpr(__retval__:NumericType[int]) = Expr(BinExpr(LHSExpr(IdExpr(a:NumericType[int]))+LHSExpr(IdExpr(b:NumericType[int]))))) -> (FunctionExitNode N7068 )
-E496 FunctionReturnEdge: (FunctionExitNode N7068 ) - (E490 FunctionSummaryEdge: (GeneralNode N7083 ) - (IdExpr(z:NumericType[int]) = CallExpr(LHSExpr(IdExpr(sum:FunctionType[NumericType[int] -> NumericType[int] -> NumericType[int]]))(LHSExpr(IdExpr(x:NumericType[int])), LHSExpr(IdExpr(y:NumericType[int])))): ) -> (GeneralNode N7084 )) -> (GeneralNode N7084 )
-E497 AssumeEdge: (GeneralNode N7084 ) - (BinExpr(LHSExpr(IdExpr(z:NumericType[int]))!=BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LHSExpr(IdExpr(y:NumericType[int]))))) -> (GeneralNode N7086 )
-E498 AssumeEdge: (GeneralNode N7084 ) - (not BinExpr(LHSExpr(IdExpr(z:NumericType[int]))!=BinExpr(LHSExpr(IdExpr(x:NumericType[int]))+LHSExpr(IdExpr(y:NumericType[int]))))) -> (GeneralNode N7085 )
-E500 BlankEdge: (GeneralNode N7086 ) -> (GeneralNode N7087 )
-E502 FunctionCallEdge: (GeneralNode N7087 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> NumericType[int]]))(): E501 FunctionSummaryEdge: (GeneralNode N7087 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> NumericType[int]]))(): ) -> (GeneralNode N7088 )) -> (FunctionEntryNode N7062 )
-E503 BlankEdge: (FunctionEntryNode N7062 ) -> (GeneralNode N7063 )
-E504 BlankEdge: (GeneralNode N7063 ) -> (FunctionExitNode N7061 )
-E505 FunctionReturnEdge: (FunctionExitNode N7061 ) - (E501 FunctionSummaryEdge: (GeneralNode N7087 ) - (LHSExpr(IdExpr(__VERIFIER_error:FunctionType[ -> NumericType[int]]))(): ) -> (GeneralNode N7088 )) -> (GeneralNode N7088 )
-E506 BlankEdge: (GeneralNode N7088 ) -> (GeneralNode N7085 )
-E499 ReturnStatementEdge: (GeneralNode N7085 ) - (returnLiteralExpr(0)IdExpr(__retval__:NumericType[int]) = Expr(LiteralExpr(0))) -> (FunctionExitNode N7076 )
-E495 ReturnStatementEdge: (GeneralNode N7073 ) - (returnBinExpr(BinExpr(LHSExpr(IdExpr(a:NumericType[int]))-LiteralExpr(1))+LHSExpr(IdExpr(b:NumericType[int])))IdExpr(__retval__:NumericType[int]) = Expr(BinExpr(BinExpr(LHSExpr(IdExpr(a:NumericType[int]))-LiteralExpr(1))+LHSExpr(IdExpr(b:NumericType[int]))))) -> (FunctionExitNode N7068 )
-
-Now attempting to run reachability ... 
-Result: TRUE
+Cannot connect to CpaThriftServer
+Exception: Thrift.Transport.E(1, "TSocket: Could not connect to 127.0.0.1:9090 because: connect:Connection refused")
